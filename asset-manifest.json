@@ -1,16 +1,13 @@
 {
   "files": {
-    "main.css": "/sotreus-website/static/css/main.073c9b0a.css",
-    "main.js": "/sotreus-website/static/js/main.9120cf64.js",
-    "static/js/787.e53e1e27.chunk.js": "/sotreus-website/static/js/787.e53e1e27.chunk.js",
-    "static/media/logo.svg": "/sotreus-website/static/media/logo.6ce24c58023cc2f8fd88fe9d219db6c6.svg",
+    "main.css": "/sotreus-website/static/css/main.6c183754.css",
+    "main.js": "/sotreus-website/static/js/main.ba65fb98.js",
     "index.html": "/sotreus-website/index.html",
-    "main.073c9b0a.css.map": "/sotreus-website/static/css/main.073c9b0a.css.map",
-    "main.9120cf64.js.map": "/sotreus-website/static/js/main.9120cf64.js.map",
-    "787.e53e1e27.chunk.js.map": "/sotreus-website/static/js/787.e53e1e27.chunk.js.map"
+    "main.6c183754.css.map": "/sotreus-website/static/css/main.6c183754.css.map",
+    "main.ba65fb98.js.map": "/sotreus-website/static/js/main.ba65fb98.js.map"
   },
   "entrypoints": [
-    "static/css/main.073c9b0a.css",
-    "static/js/main.9120cf64.js"
+    "static/css/main.6c183754.css",
+    "static/js/main.ba65fb98.js"
   ]
 }

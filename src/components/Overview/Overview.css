@@ -1,0 +1,69 @@
+.overview-heading {
+    font-family: 'Adelle';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 50px;
+    line-height: 62px;
+    text-align: center;
+    color: #244D61;
+    margin-bottom: 2rem;
+  }
+  
+  .container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  
+  .overview_image {
+    width: 100%;
+    max-width: 805px;
+    height: auto;
+  }
+  
+  .overview-button {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 0px;
+    width: 308px;
+    height: 65px;
+    background: radial-gradient(53.2% 81.94% at 86.92% 50%, rgba(117, 226, 255, 0.5) 0%, rgba(117, 226, 255, 0) 100%), #244D61;
+    border-radius: 40px;
+    margin: 0 auto;
+  }
+  
+  .overview-button-text {
+    font-family: 'Visby CF';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 20px;
+    line-height: 31px;
+    text-align: center;
+    color: #FFFFFF;
+    flex: none;
+    order: 0;
+    flex-grow: 0;
+  }
+  
+  .overview-description {
+    width: 100%;
+    max-width: 1137px;
+    font-family: 'Visby CF';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 24px;
+    line-height: 37px;
+    text-align: center;
+    color: #000000;
+  }
+  
+  /* Media query for mobile devices */
+  @media (max-width: 768px) {
+    .overview-button {
+      width: 100%;
+      max-width: 308px;
+    }
+  }
+  

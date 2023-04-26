@@ -1,0 +1,63 @@
+.header {
+    position: relative;
+    width: 100%;
+    height: 124px;
+    background: rgba(117, 226, 255, 0.5);
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 48px;
+    box-sizing: border-box;
+  }
+   
+  .logo {
+    background: #244D61;
+    border: 0.3px solid #AFE7F6;
+  }
+  
+  .site-title {
+    font-family: 'Galgo';
+    font-weight: 500;
+    font-size: 30px;
+    line-height: 45px;
+    text-align: center;
+    letter-spacing: 0.02em;
+    text-transform: uppercase;
+    color: #000000;
+  }
+  
+  .nav {
+    display: flex;
+    gap: 20px;
+  }
+  
+  .nav-link {
+    font-family: 'Adelle';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 24px;
+    line-height: 30px;
+    text-align: center;
+    color: #000000;
+    text-decoration: none;
+  }
+  
+  .sign-in-button {
+    width: 207px;
+    height: 60px;
+    background: radial-gradient(37.68% 85% at 87.92% 50%, rgba(117, 226, 255, 0.5) 0%, rgba(117, 226, 255, 0) 100%), #244D61;
+    box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.25);
+    border-radius: 30px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-family: 'Adelle';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 25px;
+    line-height: 31px;
+    text-align: center;
+    color: #FFFFFF;
+    text-decoration: none;
+  }
+  

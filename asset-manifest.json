@@ -1,6 +1,6 @@
 {
   "files": {
-    "main.css": "/sotreus-website/static/css/main.c5151515.css",
+    "main.css": "/sotreus-website/static/css/main.f4c10cf4.css",
     "main.js": "/sotreus-website/static/js/main.96e73779.js",
     "static/media/comprehensive_functionality.svg": "/sotreus-website/static/media/comprehensive_functionality.e76b46f15e3e058bb5d54516588fa9fa.svg",
     "static/media/group-58.svg": "/sotreus-website/static/media/group-58.f338db985e38ae3f0923926b8ab5faff.svg",
@@ -14,11 +14,11 @@
     "index.html": "/sotreus-website/index.html",
     "static/media/group-54.svg": "/sotreus-website/static/media/group-54.8740504d3c39d00355a40a0406e3d15a.svg",
     "static/media/icsharpfacebook.svg": "/sotreus-website/static/media/icsharpfacebook.764a7bd910a84431378e7b8dee2c8afd.svg",
-    "main.c5151515.css.map": "/sotreus-website/static/css/main.c5151515.css.map",
+    "main.f4c10cf4.css.map": "/sotreus-website/static/css/main.f4c10cf4.css.map",
     "main.96e73779.js.map": "/sotreus-website/static/js/main.96e73779.js.map"
   },
   "entrypoints": [
-    "static/css/main.c5151515.css",
+    "static/css/main.f4c10cf4.css",
     "static/js/main.96e73779.js"
   ]
 }

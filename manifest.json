@@ -3,7 +3,7 @@
   "name": "DNS-based firewall that blocks unwanted ads, trackers, and malware.",
   "icons": [
     {
-      "src": "logo.svg",
+      "src": "./logo.svg",
       "sizes": "60x60",
       "type": "image/svg+xml"
     }

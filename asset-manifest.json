@@ -1,24 +1,24 @@
 {
   "files": {
-    "main.css": "/TheLazarusNetwork/sotreus-website.git/static/css/main.45086e68.css",
-    "main.js": "/TheLazarusNetwork/sotreus-website.git/static/js/main.af0d094b.js",
-    "static/media/comprehensive_functionality.svg": "/TheLazarusNetwork/sotreus-website.git/static/media/comprehensive_functionality.e76b46f15e3e058bb5d54516588fa9fa.svg",
-    "static/media/group-58.svg": "/TheLazarusNetwork/sotreus-website.git/static/media/group-58.f338db985e38ae3f0923926b8ab5faff.svg",
-    "static/media/easy_integration.svg": "/TheLazarusNetwork/sotreus-website.git/static/media/easy_integration.a5119ac69e9fcc01581db9700e290869.svg",
-    "static/media/flexible_deployment.svg": "/TheLazarusNetwork/sotreus-website.git/static/media/flexible_deployment.d87e9fbe59c23429fd64b175e27f4512.svg",
-    "static/media/group-55.svg": "/TheLazarusNetwork/sotreus-website.git/static/media/group-55.17cf5ba94dd48b508b1934078ffdba7c.svg",
-    "static/media/group-64.svg": "/TheLazarusNetwork/sotreus-website.git/static/media/group-64.b2aa17be89bd5c6b156393c50ec55aa8.svg",
-    "static/media/security_and_privacy.svg": "/TheLazarusNetwork/sotreus-website.git/static/media/security_and_privacy.d47289114726c78240ab7f684758105a.svg",
-    "static/media/vector-19.svg": "/TheLazarusNetwork/sotreus-website.git/static/media/vector-19.e3dbe2626b95dd13c2ecce47e3380dbf.svg",
-    "static/media/vector-18.svg": "/TheLazarusNetwork/sotreus-website.git/static/media/vector-18.4c4b335a3d12d4059051562d9efa53f0.svg",
-    "index.html": "/TheLazarusNetwork/sotreus-website.git/index.html",
-    "static/media/group-54.svg": "/TheLazarusNetwork/sotreus-website.git/static/media/group-54.8740504d3c39d00355a40a0406e3d15a.svg",
-    "static/media/icsharpfacebook.svg": "/TheLazarusNetwork/sotreus-website.git/static/media/icsharpfacebook.764a7bd910a84431378e7b8dee2c8afd.svg",
-    "main.45086e68.css.map": "/TheLazarusNetwork/sotreus-website.git/static/css/main.45086e68.css.map",
-    "main.af0d094b.js.map": "/TheLazarusNetwork/sotreus-website.git/static/js/main.af0d094b.js.map"
+    "main.css": "https://github.com/TheLazarusNetwork/sotreus-website.git/static/css/main.45086e68.css",
+    "main.js": "https://github.com/TheLazarusNetwork/sotreus-website.git/static/js/main.a3245e5a.js",
+    "static/media/comprehensive_functionality.svg": "https://github.com/TheLazarusNetwork/sotreus-website.git/static/media/comprehensive_functionality.e76b46f15e3e058bb5d54516588fa9fa.svg",
+    "static/media/group-58.svg": "https://github.com/TheLazarusNetwork/sotreus-website.git/static/media/group-58.f338db985e38ae3f0923926b8ab5faff.svg",
+    "static/media/easy_integration.svg": "https://github.com/TheLazarusNetwork/sotreus-website.git/static/media/easy_integration.a5119ac69e9fcc01581db9700e290869.svg",
+    "static/media/flexible_deployment.svg": "https://github.com/TheLazarusNetwork/sotreus-website.git/static/media/flexible_deployment.d87e9fbe59c23429fd64b175e27f4512.svg",
+    "static/media/group-55.svg": "https://github.com/TheLazarusNetwork/sotreus-website.git/static/media/group-55.17cf5ba94dd48b508b1934078ffdba7c.svg",
+    "static/media/group-64.svg": "https://github.com/TheLazarusNetwork/sotreus-website.git/static/media/group-64.b2aa17be89bd5c6b156393c50ec55aa8.svg",
+    "static/media/security_and_privacy.svg": "https://github.com/TheLazarusNetwork/sotreus-website.git/static/media/security_and_privacy.d47289114726c78240ab7f684758105a.svg",
+    "index.html": "https://github.com/TheLazarusNetwork/sotreus-website.git/index.html",
+    "static/media/vector-19.svg": "https://github.com/TheLazarusNetwork/sotreus-website.git/static/media/vector-19.e3dbe2626b95dd13c2ecce47e3380dbf.svg",
+    "static/media/vector-18.svg": "https://github.com/TheLazarusNetwork/sotreus-website.git/static/media/vector-18.4c4b335a3d12d4059051562d9efa53f0.svg",
+    "static/media/group-54.svg": "https://github.com/TheLazarusNetwork/sotreus-website.git/static/media/group-54.8740504d3c39d00355a40a0406e3d15a.svg",
+    "static/media/icsharpfacebook.svg": "https://github.com/TheLazarusNetwork/sotreus-website.git/static/media/icsharpfacebook.764a7bd910a84431378e7b8dee2c8afd.svg",
+    "main.45086e68.css.map": "https://github.com/TheLazarusNetwork/sotreus-website.git/static/css/main.45086e68.css.map",
+    "main.a3245e5a.js.map": "https://github.com/TheLazarusNetwork/sotreus-website.git/static/js/main.a3245e5a.js.map"
   },
   "entrypoints": [
     "static/css/main.45086e68.css",
-    "static/js/main.af0d094b.js"
+    "static/js/main.a3245e5a.js"
   ]
 }

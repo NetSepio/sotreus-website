@@ -1,6 +1,6 @@
 {
-  "short_name": "React App",
-  "name": "Create React App Sample",
+  "short_name": "Sotreus",
+  "name": "DNS-based firewall that blocks unwanted ads, trackers, and malware.",
   "icons": [
     {
       "src": "./logo.svg",

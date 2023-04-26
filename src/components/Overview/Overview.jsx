@@ -1,6 +1,3 @@
-// Make the `overview_image`, `overview-description` & `overview-button` to be in the center of the screen like 
-// Also make the component responsive for mobile devices
-
 import React from "react";
 import "./Overview.css";
 import OverviewImage from "../../assests/group-58.svg";

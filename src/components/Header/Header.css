@@ -16,14 +16,11 @@
   }
   
   .site-title {
-    font-family: 'Galgo';
-    font-weight: 500;
-    font-size: 30px;
-    line-height: 45px;
+    font-size: 17px;
     text-align: center;
-    letter-spacing: 0.02em;
     text-transform: uppercase;
-    color: #000000;
+    color: white;
+    font-weight: bold;
   }
   
   .nav {
@@ -43,21 +40,17 @@
   }
   
   .sign-in-button {
-    width: 207px;
-    height: 60px;
-    background: radial-gradient(37.68% 85% at 87.92% 50%, rgba(117, 226, 255, 0.5) 0%, rgba(117, 226, 255, 0) 100%), #244D61;
-    box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.25);
+    width: 150px;
+    height: 50px;
     border-radius: 30px;
     display: flex;
     align-items: center;
     justify-content: center;
-    font-family: 'Adelle';
+    font-size: 10px;
     font-style: normal;
-    font-weight: 600;
+    font-weight: bold;
     font-size: 25px;
-    line-height: 31px;
     text-align: center;
     color: #FFFFFF;
-    text-decoration: none;
   }
   

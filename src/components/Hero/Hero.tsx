@@ -13,7 +13,7 @@ const Hero = () => {
         <h1 className="hero-heading">Stay Anonymous Online</h1>
         <p className="hero-subheading">DNS-based firewall that blocks unwanted ads, trackers, and malware.</p>
         <div className="frame-33">
-          <span className="cta-text">Get Sotreus VPN now</span>
+          <button className="btn btn-primary">Get Sotreus VPN now</button>
         </div>
       </div>
     </div>

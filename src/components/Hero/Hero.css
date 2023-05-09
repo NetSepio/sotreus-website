@@ -11,9 +11,8 @@
     left: 50%; /* Added this */
     top: 568px;
     transform: translateX(-50%); /* Added this */
+    font-weight: bold;
 
-    background: radial-gradient(43.91% 1243.16% at 92.8% 60.19%, rgba(117, 226, 255, 0.5) 0%, rgba(117, 226, 255, 0) 100%) /* warning: gradient uses a rotation that is not supported by CSS and may not behave as expected */, #244D61;
-    border-radius: 60px;
 }
 
 .cta-text{
@@ -50,7 +49,7 @@
 
     text-align: center;
 
-    color: #244D61; 
+    color: white; 
 }
 
 .hero-subheading{
@@ -68,38 +67,10 @@
     line-height: 39px;
     text-align: center;
     
-    color: #244D61; 
+    color: white; 
 }
 
-  /* New class to center content over Vector19 */
-  .content-overlay {
-    position: absolute;
-    z-index: 2; /* Added to place the content over Vector19 */
-    display: flex;
-    flex-direction: column;
-    align-items: center; /* To center the content horizontally */
-    justify-content: center; /* To center the content vertically */
-    top: 0;
-    left: 0;
-    width: 100%; /* Added to cover the full width of the parent div */
-    height: 100%; /* Added to cover the full height of the parent div */
-  }
   
-  .vector-18 {
-    position: absolute;
-    z-index: 1; /* Added to place Vector18 below Vector19 */
-    top: 50%; /* Added to vertically center Vector18 in the parent div */
-    left: 50%; /* Added to horizontally center Vector18 in the parent div */
-    transform: translate(-50%, -50%); /* Added to adjust the position of Vector18 */
-  }
-  
-  .vector-19 {
-    position: absolute;
-    z-index: 0; /* Added to place Vector19 above Vector18 */
-    top: 50%; /* Added to vertically center Vector19 in the parent div */
-    left: 50%; /* Added to horizontally center Vector19 in the parent div */
-    transform: translate(-50%, -50%); /* Added to adjust the position of Vector19 */
-  }
   
 
 /* Add media queries for tablet and mobile devices */

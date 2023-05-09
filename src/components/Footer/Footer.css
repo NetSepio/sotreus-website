@@ -1,13 +1,11 @@
 .footer {
   width: 100%;
-  height: 542px;
-  background: #AFE7F6;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  padding: 0;
-  margin: 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background: #2b2525;
+    padding: 40px;
 }
 
 .footer-content {
@@ -41,12 +39,10 @@
 }
 
 .site-title {
-  font-family: 'Visby CF';
   font-style: normal;
-  font-weight: 700;
-  font-size: 28px;
-  line-height: 44px;
-  color: #000000;
+  font-size: 17px;
+  color:white;
+  font-weight: bold;
 }
 
 .footer-contact {
@@ -55,10 +51,10 @@
   font-family: 'Adelle';
   font-style: normal;
   font-weight: 600;
-  font-size: 28px;
+  font-size: 21px;
   line-height: 35px;
   text-transform: capitalize;
-  color: #000000;
+  color: white;
 }
 
 .footer-icons {
@@ -90,14 +86,14 @@
 }
 
 .footer-description {
-  width: 628px;
+  width: 50%;
   height: 132px;
   font-family: 'Visby CF';
   font-style: normal;
   font-weight: 400;
-  font-size: 28px;
-  line-height: 44px;
-  color: #000000;
+  font-size: 14px;
+  line-height: 25px;
+  color: white;
 }
 
 @media screen and (max-width: 1024px) {

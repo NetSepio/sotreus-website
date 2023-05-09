@@ -7,17 +7,17 @@ const Overview = () => {
     <section className="p-4 lg:p-8 dark:bg-gray-800 dark:text-gray-100 py-10">
       <div className="container mx-auto space-y-12">
 
-        <h1 className="overview-heading">Overview</h1>
-        <img className="overview_image" src={OverviewImage} alt=""/>
+        <h1 style={{color:"white",fontSize:"30px",fontWeight:"bold"}}>Overview</h1>
+        {/* <img className="overview_image" src={OverviewImage} alt=""/> */}
 
         <p className="overview-description">
           Sotreus is a powerful and user-friendly API that simplifies the management of WireGuard VPN server and client configurations. It provides a seamless interface to interact with WireGuard VPN services, enabling users to easily manage their VPN networks and configurations. By utilizing the Sotreus API, users can create, update, and delete client configurations, access server information, and even email client configuration files to their respective users.
         </p>
       
         <button className="overview-button">
-          <span className="overview-button-text">
+          <button className="btn btn-primary">
             Get VPN Now
-          </span>
+          </button>
         </button>
 
       </div>

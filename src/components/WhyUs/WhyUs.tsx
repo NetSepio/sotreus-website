@@ -4,7 +4,7 @@ import './WhyUs.css';
 const WhyUs = () => {
     return (
         <div className="why-us-container">
-            <h2 className="why-us-title">Why Sotreus</h2>
+            <h2 style={{color:"white",fontSize:"30px",fontWeight:"bold"}}>Why Sotreus</h2>
             <div className="features-row">
                 <div className="feature">
                     <h3 className="feature-title">Firewall</h3>

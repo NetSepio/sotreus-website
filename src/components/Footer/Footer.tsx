@@ -15,12 +15,15 @@ const Footer = () => {
               <div className="logo_container">
                 <img src={logo} alt="Logo" className="logo rounded-full" />
               </div>
-              <h1 className="site-title mt-2">Sotreus</h1>
-            </div>
-            <p className="footer-description">
+              <div>
+              <div style={{color:"white",fontWeight:"bold",fontSize:"17px"}} className="mt-2">Sotreus</div>
+            
+            <div className="footer-description" style={{marginTop:"10px"}}>
               Sotreus is a fast and easy-to-use VPN service that protects internet
               activities from cyber threats and surveillance.
-            </p>
+            </div>
+            </div>
+            </div>
           </div>
         </div>
         <div className="right-side">

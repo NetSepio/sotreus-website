@@ -7,7 +7,7 @@ import Overview from './components/Overview/Overview'
 
 const App = () => {
   return (
-    <div>
+    <div className='bg-black'>
       <Header/>
       <Hero/>
       <WhyUs/>

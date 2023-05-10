@@ -4,7 +4,7 @@
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    background: #244D61;
+    background: #212637;
     padding: 40px;
 }
 
@@ -86,7 +86,6 @@
 }
 
 .footer-description {
-  width: 50%;
   height: 132px;
   font-family: 'Visby CF';
   font-style: normal;

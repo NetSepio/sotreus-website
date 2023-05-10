@@ -1,18 +1,15 @@
 import Header from './components/Header/Header'
 import Hero from './components/Hero/Hero'
-import WhyUs from './components/WhyUs/WhyUs'
 import Footer from './components/Footer/Footer'
-import KeyFeatures from './components/KeyFeatures/KeyFeatures'
-import Overview from './components/Overview/Overview'
-
+import Pricing from './components/Pricing/Pricing';
+import Feature2 from './components/Feature2/Feature2'
 const App = () => {
   return (
     <div className='bg-black'>
       <Header/>
       <Hero/>
-      <WhyUs/>
-      <KeyFeatures/>
-      <Overview/>
+      <Feature2/>
+      <Pricing/>
       <Footer/>
     </div>
   )

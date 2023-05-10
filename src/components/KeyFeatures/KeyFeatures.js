@@ -2,9 +2,6 @@ import React from "react";
 import "./KeyFeatures.css";
 import ComprehensiveFunctionalityIcon from "../../assests/comprehensive_functionality.svg";
 import EasyIntegrationIcon from "../../assests/easy_integration.svg";
-import FlexibleDeploymentIcon from "../../assests/flexible_deployment.svg";
-import SecurityAndPrivacyIcon from "../../assests/security_and_privacy.svg";
-
 const KeyFeatures = () => {
   return (
     <section className="p-4 lg:p-8 dark:bg-gray-800 dark:text-gray-100 py-10">

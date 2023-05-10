@@ -1,9 +1,8 @@
 import React from "react";
 import "./Footer.css";
 import logo from "../../assests/group-64.svg";
-import FacebookIcon from "../../assests/icsharpfacebook.svg";
-import Group54Icon from "../../assests/group-54.svg";
-import Group55Icon from "../../assests/group-55.svg";
+import { SocialIcon } from "react-social-icons";
+
 
 const Footer = () => {
   return (
@@ -28,11 +27,12 @@ const Footer = () => {
         </div>
         <div className="right-side">
           <p className="footer-contact flex justify-center ">Contact us</p>
-          <div className="footer-icons">
-            <img className="footer-facebook" src={FacebookIcon} alt="Facebook" />
-            <img className="footer-group-54" src={Group54Icon} alt="Twitter" />
-            <img className="footer-group-55" src={Group55Icon} alt="Discord" />
-          </div>
+          <div className="flex gap-x-4 items-center mt-5">
+                  <div><SocialIcon url="https://t.me/MyriadFlow" network="telegram" /></div>
+                <div><SocialIcon url="https://twitter.com/0xMyriadFlow" network="twitter" /></div>
+                <div><SocialIcon url="https://discord.gg/38jktRtuY7" network="discord" /></div>
+
+              </div>
         </div>
       </div>
     </div>

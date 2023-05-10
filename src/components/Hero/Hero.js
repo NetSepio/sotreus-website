@@ -1,19 +1,14 @@
 import React from 'react';
 import './Hero.css';
-import Vector18 from '../../assests/vector-18.svg';
-import Vector19 from '../../assests/vector-19.svg';
-
 const Hero = () => {
   return (
     <div className="hero">
-      <img src={Vector18} alt="Vector 18" className="vector-18" />
-      <img src={Vector19} alt="Vector 19" className="vector-19" />
-      
       <div className="content-overlay">
-        <h1 className="hero-heading">Stay Anonymous Online</h1>
-        <p className="hero-subheading">DNS-based firewall that blocks unwanted ads, trackers, and malware.</p>
-        <div className="frame-33">
-          <button className="btn btn-primary">Get Sotreus VPN now</button>
+        <h1 className='text-center text-white text-4xl mt-40 font-bold'>Stay Anonymous Online</h1>
+        <p className='text-center text-white text-l mt-10'>DNS-based firewall that blocks unwanted ads, </p>
+        <p className='text-center text-white text-l mt-1'>trackers, and malware.</p>
+        <div className='text-center text-white text-l mt-10'>
+          <button className="bg-blue-500 hover:bg-blue-400 text-white font-bold py-2 px-4 border-b-4 border-blue-700 hover:border-blue-500 rounded">Get Sotreus VPN now</button>
         </div>
       </div>
     </div>

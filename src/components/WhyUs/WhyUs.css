@@ -5,6 +5,7 @@
     align-items: center;
     padding: 20px 0;
     box-sizing: border-box;
+    margin-top: 50px;
 }
 
 .why-us-title {
@@ -16,6 +17,7 @@
     text-align: center;
     color: #75E2FF;
     margin-bottom: 50px;
+    
 }
 
 .features-row {

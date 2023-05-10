@@ -47,15 +47,11 @@
   }
   
   .overview-description {
-    width: 100%;
-    max-width: 1137px;
-    font-family: 'Visby CF';
-    font-style: normal;
-    font-weight: 400;
-    font-size: 24px;
-    line-height: 37px;
+    max-width: 755px;
+    font-size: 16px;
     text-align: center;
-    color: #000000;
+    color: white;
+    text-align: center;
   }
   
   /* Media query for mobile devices */

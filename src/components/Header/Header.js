@@ -10,8 +10,10 @@ const Header = () => {
         <a className="site-title flex items-center justify-center" href='/'>Sotreus</a>
       </div>
       <div className='flex items-center 'style={{fontSize:"14px",gap:"10px"}}>
-        <div className='text-white'>Feature</div>
-        <div className='text-white'>pricing</div>
+        <a href="/#features" className='text-white'>
+        Feature
+        </a>
+        <a href='/#pricing' className='text-white'>pricing</a>
 
         <div>
         <button className="bg-blue-500 hover:bg-blue-400 text-white font-bold py-2 px-4 border-b-4 border-blue-700 hover:border-blue-500 rounded">Sign Up</button>

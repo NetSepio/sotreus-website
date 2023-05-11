@@ -1,14 +1,14 @@
 {
   "files": {
-    "main.css": "https://thelazarusnetwork.github.io/sotreus-website/static/css/main.06fa6337.css",
-    "main.js": "https://thelazarusnetwork.github.io/sotreus-website/static/js/main.19a41523.js",
+    "main.css": "https://thelazarusnetwork.github.io/sotreus-website/static/css/main.63757417.css",
+    "main.js": "https://thelazarusnetwork.github.io/sotreus-website/static/js/main.d4a53626.js",
     "static/media/group-64.svg": "https://thelazarusnetwork.github.io/sotreus-website/static/media/group-64.a95938ed9e45283efb7e8ad9ffb04c05.svg",
     "index.html": "https://thelazarusnetwork.github.io/sotreus-website/index.html",
-    "main.06fa6337.css.map": "https://thelazarusnetwork.github.io/sotreus-website/static/css/main.06fa6337.css.map",
-    "main.19a41523.js.map": "https://thelazarusnetwork.github.io/sotreus-website/static/js/main.19a41523.js.map"
+    "main.63757417.css.map": "https://thelazarusnetwork.github.io/sotreus-website/static/css/main.63757417.css.map",
+    "main.d4a53626.js.map": "https://thelazarusnetwork.github.io/sotreus-website/static/js/main.d4a53626.js.map"
   },
   "entrypoints": [
-    "static/css/main.06fa6337.css",
-    "static/js/main.19a41523.js"
+    "static/css/main.63757417.css",
+    "static/js/main.d4a53626.js"
   ]
 }

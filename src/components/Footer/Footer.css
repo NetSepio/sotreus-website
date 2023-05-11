@@ -4,7 +4,7 @@
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    background: #212637;
+    background:#4f5055;
     padding: 40px;
 }
 
@@ -30,7 +30,6 @@
 
 .flex.space-x-2 {
   display: flex;
-  gap: 0.5rem;
 }
 
 .logo_container .logo {
@@ -124,7 +123,7 @@
   }
 
   .site-title {
-    font-size: 24px;
+    font-size: 20px;
     line-height: 36px;
   }
 

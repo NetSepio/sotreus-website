@@ -9,9 +9,8 @@ const Header = () => {
         <img className="logo rounded-full w-10 h-10" src={logo} alt="logo" />
         <a className="site-title flex items-center justify-center" href='/'>Sotreus</a>
       </div>
-      <div className='flex items-center gap-10 '>
+      <div className='flex items-center 'style={{fontSize:"14px",gap:"10px"}}>
         <div className='text-white'>Feature</div>
-        <div className='text-white'>How To</div>
         <div className='text-white'>pricing</div>
 
         <div>

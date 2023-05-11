@@ -1,11 +1,8 @@
 import React from "react";
 import "./Footer.css";
 import logo from "../../assests/group-64.svg";
-import { SocialIcon } from "react-social-icons";
 import {
   FaFacebook,
-  FaYoutube,
-  FaGithub,
   FaDiscord,
   FaTwitter,
   FaTelegram,
@@ -36,28 +33,24 @@ const Footer = () => {
           <div className="flex gap-x-4 items-center mt-5">
           <a
                   href="https://www.facebook.com/Lazarus.Network?mibextid=LQQJ4d"
-                  target={"_blank"}
                   className="text-2xl hover:text-[#4267B2]"
                 >
                   <FaFacebook />
                 </a>           
                 <a
                   href="https://t.me/LazarusNetwork"
-                  target={"_blank"}
                   className="text-2xl hover:text-[#1DA1F2]"
                 >
                   <FaTelegram />
                 </a>       
                 <a
                   href="https://twitter.com/LazarusNetwork"
-                  target={"_blank"}
                   className="text-2xl hover:text-[#1DA1F2]"
                 >
                   <FaTwitter />
                 </a>                
                 <a
                   href="https://discord.gg/LazarusNetwork"
-                  target={"_blank"}
                   className="text-2xl hover:text-[#1DA1F2]"
                 >
                   <FaDiscord />

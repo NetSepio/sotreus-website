@@ -3,7 +3,7 @@
 //   public/og.png            ← "Social card 1200×630"
 //   app/apple-icon.png       ← "Logo system", app icon tile (180×180)
 //   public/logo/icon-512.png ← "Logo system", app icon tile (512×512)
-// Run with `npm run images`. Overwrites those three files.
+// Run with `npm run images` (installs sharp temporarily). Overwrites those three files.
 import sharp from 'sharp';
 
 const INK = '#0B0E13';

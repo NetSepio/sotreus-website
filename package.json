@@ -10,7 +10,7 @@
     "build": "next build",
     "start": "npx serve out",
     "lint": "next lint",
-    "images": "node scripts/generate-images.mjs"
+    "images": "npm install --no-save sharp@^0.35 && node scripts/generate-images.mjs"
   },
   "dependencies": {
     "next": "^15.5.27",
@@ -18,6 +18,8 @@
     "react-dom": "^19.3.0"
   },
   "devDependencies": {
+    "@emnapi/core": "^1.11.3",
+    "@emnapi/runtime": "^1.11.3",
     "@eslint/eslintrc": "^3.3.7",
     "@types/node": "^20.19.43",
     "@types/react": "^19.3.0",
@@ -25,7 +27,6 @@
     "eslint": "^9.39.5",
     "eslint-config-next": "^15.5.27",
     "prettier": "^3.9.9",
-    "sharp": "^0.35.5",
     "typescript": "^5.9.3"
   }
 }

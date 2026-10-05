@@ -1,0 +1,7 @@
+.section{position:relative;overflow:hidden;padding:clamp(96px,12vw,168px) 0}
+.ring{position:absolute;left:50%;top:50%;transform:translate(-50%,-50%);border:1px solid var(--line-soft);border-radius:50%}
+.ping{width:900px;animation-duration:9s}
+.inner{position:relative;max-width:calc(900px + var(--gutter) * 2);margin:0 auto;padding:0 var(--gutter);display:flex;flex-direction:column;align-items:center;text-align:center;gap:28px}
+.quote{margin:0;font-family:var(--font-display);font-weight:400;font-size:clamp(34px,4.6vw,64px);line-height:1.06;letter-spacing:-.01em;text-wrap:balance}
+.quote em{color:var(--muted)}
+.social{display:inline-flex;align-items:center;gap:10px;min-height:44px;color:var(--fog);text-decoration:none;font-size:15px}

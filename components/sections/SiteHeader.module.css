@@ -1,0 +1,18 @@
+.header{position:sticky;top:0;z-index:30;background:rgba(11,14,19,.86);backdrop-filter:blur(12px);-webkit-backdrop-filter:blur(12px);border-bottom:1px solid var(--line-1)}
+.bar{height:68px;display:flex;align-items:center;justify-content:space-between;gap:24px}
+.brand{display:flex;align-items:center;gap:12px;min-height:44px;text-decoration:none;color:var(--bone)}
+.brand:hover{color:var(--bone)}
+.nav{display:flex;gap:28px;font-size:14px}
+.nav a{color:var(--muted);text-decoration:none;transition:color .2s}
+.nav a:hover{color:var(--bone)}
+.actions{display:flex;align-items:center;gap:8px}
+.cta{min-height:44px;padding:0 18px;font-size:14px}
+
+@media (max-width: 760px){
+  .bar{gap:12px}
+  .nav{display:none}
+  .cta{padding:0 14px;font-size:13px}
+}
+@media (max-width: 419.98px){
+  .cta{display:none}
+}

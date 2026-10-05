@@ -1,0 +1,11 @@
+.footer{border-top:1px solid var(--line-1)}
+.inner{padding-top:48px;padding-bottom:40px;display:flex;flex-direction:column;gap:40px}
+.top{display:flex;flex-wrap:wrap;justify-content:space-between;gap:32px}
+.brandCol{display:flex;flex-direction:column;gap:14px;max-width:420px}
+.brand{display:flex;align-items:center;gap:12px}
+.about{margin:0;font-size:14px;line-height:1.6;color:var(--faint)}
+.nav{display:flex;flex-wrap:wrap;gap:0 32px;font-size:14px;align-items:flex-start}
+.nav a{display:inline-flex;align-items:center;min-height:44px;color:var(--muted);text-decoration:none;transition:color .2s}
+.nav a:hover{color:var(--bone)}
+.legal{display:flex;flex-wrap:wrap;justify-content:space-between;gap:12px;padding-top:24px;border-top:1px solid var(--line-0);font-size:13px;color:var(--faint)}
+.domain{font-family:var(--font-mono);letter-spacing:.1em}

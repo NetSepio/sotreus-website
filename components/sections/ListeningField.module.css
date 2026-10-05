@@ -1,0 +1,38 @@
+.field{--glyph-bg:var(--ink-900);position:relative;width:100%;aspect-ratio:1;border:1px solid var(--line-ring);border-radius:32px;background:radial-gradient(circle at 50% 50%,var(--field-core) 0%,var(--ink-900) 70%);overflow:hidden;font-family:var(--font-mono)}
+.crossH{position:absolute;left:0;right:0;top:50%;height:1px;background:var(--line-soft)}
+.crossV{position:absolute;top:0;bottom:0;left:50%;width:1px;background:var(--line-soft)}
+.range{position:absolute;left:50%;top:50%;aspect-ratio:1;border:1px solid;border-radius:50%;transform:translate(-50%,-50%)}
+
+.orbitPath{position:absolute;left:-25%;top:-105%;width:150%;aspect-ratio:1;border:1.5px dashed rgba(185,166,255,.35);border-radius:50%}
+.orbit{position:absolute;left:-25%;top:-105%;width:150%;aspect-ratio:1;border-radius:50%;animation-delay:-20s}
+.satellite{position:absolute;left:50%;bottom:-8px;margin-left:-7px}
+
+.tag,.tagInline{font-size:10px;letter-spacing:.1em;background:rgba(13,17,23,.85);padding:3px 6px;border-radius:4px;white-space:nowrap}
+.tag{position:absolute}
+
+.flyTrack{position:absolute;inset:0;pointer-events:none;transform:translate(-10%,74%)}
+.point{position:absolute;display:flex;align-items:center;gap:8px}
+.flyTrack .point{left:0;top:0}
+
+.newDot{position:relative;width:10px;height:10px;flex:none}
+.halo{position:absolute;inset:0;border:1px solid var(--sensed);border-radius:50%}
+.newCore{position:absolute;inset:0;border-radius:50%;background:var(--sensed)}
+
+.blip{position:absolute;width:6px;height:6px;border-radius:50%;background:var(--sensed)}
+
+.you{position:absolute;left:50%;top:50%;width:12px;height:12px;margin:-6px 0 0 -6px;background:var(--bone);transform:rotate(45deg)}
+.youLabel{position:absolute;left:50%;top:50%;margin:12px 0 0 -12px;font-size:10px;letter-spacing:.14em;color:var(--bone)}
+
+.readoutL{position:absolute;left:18px;top:16px;display:flex;flex-direction:column;gap:4px;font-size:10px;letter-spacing:.12em}
+.observing{display:flex;align-items:center;gap:8px;color:var(--sensed)}
+.liveDot{width:6px;height:6px;border-radius:50%;background:var(--sensed)}
+.readoutR{position:absolute;right:18px;top:16px;text-align:right;display:flex;flex-direction:column;gap:4px;font-size:10px;letter-spacing:.12em;color:var(--faint)}
+
+.legend{position:absolute;left:14px;right:14px;bottom:14px;display:flex;flex-wrap:wrap;justify-content:center;gap:8px 20px;padding:10px 12px;border:1px solid var(--line-2);border-radius:14px;background:rgba(11,14,19,.9);font-size:10px;letter-spacing:.14em}
+.legend > span{display:flex;align-items:center;gap:8px}
+
+/* static frame: satellite on the visible arc, aircraft mid-path */
+@media (prefers-reduced-motion: reduce){
+  .orbit{transform:rotate(-24deg)}
+  .flyTrack{transform:translate(49%,41%)}
+}

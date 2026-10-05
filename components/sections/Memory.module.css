@@ -1,0 +1,10 @@
+.inner{display:flex;flex-direction:column;gap:var(--section-gap)}
+.head{display:flex;flex-wrap:wrap;align-items:flex-end;justify-content:space-between;gap:24px 64px}
+.headTitle{flex:1 1 560px;min-width:0;display:flex;flex-direction:column;gap:20px}
+.headText{flex:1 1 340px;min-width:0}
+.cards{display:grid;grid-template-columns:repeat(auto-fit,minmax(min(250px,100%),1fr));gap:16px}
+.card{padding:28px;border:1px solid var(--line-2);border-radius:var(--r-card);background:var(--ink-950);display:flex;flex-direction:column;gap:14px}
+.cardHi{border-color:var(--amber-tint-line);background:var(--amber-tint-bg)}
+.dot{width:10px;height:10px;border-radius:50%;background:var(--sensed)}
+.cardTitle{margin:0;font-size:22px;font-weight:500;line-height:1.2}
+.cardText{margin:0;font-size:var(--fs-body-sm);line-height:1.55;color:var(--muted)}

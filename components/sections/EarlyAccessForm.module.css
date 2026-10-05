@@ -1,0 +1,14 @@
+.form{width:100%;max-width:520px;display:flex;flex-direction:column;gap:8px;text-align:left}
+.label{font-family:var(--font-mono);font-size:12px;letter-spacing:.14em;color:var(--faint)}
+.row{display:flex;flex-wrap:wrap;gap:10px}
+.input{flex:1 1 260px;min-width:0;min-height:52px;padding:0 20px;border:1px solid var(--line-3);border-radius:var(--r-pill);background:var(--ink-900);color:var(--bone);font-size:16px}
+.input::placeholder{color:var(--faint)}
+.submit{flex:0 0 auto;justify-content:center;min-height:52px;padding:0 26px;font-size:16px}
+.submit:disabled{opacity:.7;cursor:progress;transform:none}
+.honeypot{position:absolute;left:-10000px;width:1px;height:1px;overflow:hidden}
+.error{margin:0;font-size:14px;color:var(--bone)}
+.note{font-size:13px;color:var(--faint)}
+.joined{display:flex;align-items:center;gap:12px;padding:16px 24px;border:1px solid var(--amber-tint-line);border-radius:var(--r-pill);background:var(--amber-tint-bg);color:var(--sensed);font-size:16px;text-align:left}
+.joinedDot{flex:none;width:8px;height:8px;border-radius:50%;background:var(--sensed)}
+
+@media (max-width: 420px){.submit{flex:1 1 100%}}

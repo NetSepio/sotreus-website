@@ -1,0 +1,59 @@
+:root {
+  /* ground */
+  --ink-950: #0B0E13;   /* page */
+  --ink-900: #0D1117;   /* alt sections, cards */
+  --ink-850: #10141B;   /* tiles */
+  --ink-800: #121721;   /* row hover, list items */
+  --line-1:  #1A2029;   /* section rules */
+  --line-2:  #1E2530;   /* card borders */
+  --line-3:  #2F3846;   /* controls */
+
+  /* supplementary values used by the reference render */
+  --line-0:     #161B23; /* table row rules */
+  --line-soft:  #161C25; /* crosshair, outer CTA ring */
+  --line-ring:  #232A36; /* badge, listening field frame */
+  --line-dash:  #3A4352; /* engine connectors, device dial */
+  --line-strike:#4A5262; /* struck-through copy */
+  --grid:       #131820; /* hero grid */
+  --field-core: #121821; /* listening field centre */
+  --bezel:      #1C222C; /* phone bezel */
+  --bezel-edge: #2A313D;
+
+  /* text (contrast on --ink-950) */
+  --bone:  #E9E6DF;     /* 15.5:1 primary */
+  --fog:   #C9CBCF;     /* 11.9:1 */
+  --muted: #A3A7AE;     /* 8.0:1 body */
+  --faint: #7C828C;     /* 5.0:1 eyebrow/caption — floor, never lighter on dark */
+
+  /* provenance + accent */
+  --sensed:    #F2B33D; /* also --accent, CTAs, focus ring */
+  --accent:    var(--sensed);
+  --network:   #6CB8F0;
+  --predicted: #B9A6FF;
+  --amber-tint-bg: #13110C;  --amber-tint-line: #3B3220;
+
+  /* device illustration only */
+  --oled-fg: #E8F1FF;  --oled-bg: #05070A;
+
+  /* type */
+  --font-display: var(--font-instrument-serif), Georgia, serif;
+  --font-sans:    var(--font-geist), ui-sans-serif, system-ui, -apple-system, sans-serif;
+  --font-mono:    var(--font-geist-mono), ui-monospace, SFMono-Regular, monospace;
+
+  --fs-h1: clamp(52px, 7.4vw, 108px);  --lh-h1: .94;  --ls-h1: -.02em;
+  --fs-h2: clamp(38px, 4.8vw, 68px);   --lh-h2: 1.02;
+  --fs-h3: clamp(30px, 3.4vw, 44px);   --lh-h3: 1.05;
+  --fs-lead: clamp(17px, 1.5vw, 20px);
+  --fs-body: 18px;  --fs-body-sm: 15px;
+  --fs-eyebrow: 12px; --ls-eyebrow: .14em;
+
+  /* layout */
+  --container: 1200px;
+  --gutter: clamp(16px, 4vw, 40px);
+  --section-y: clamp(88px, 11vw, 152px);
+  --section-gap: clamp(48px, 6vw, 80px);
+  --r-pill: 999px; --r-tile: 12px; --r-card: 20px; --r-card-lg: 24px; --r-panel: 28px;
+
+  /* motion */
+  --ease-out: cubic-bezier(.22,.61,.36,1);
+}

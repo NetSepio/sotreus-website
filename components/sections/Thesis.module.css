@@ -1,0 +1,5 @@
+.inner{display:flex;flex-wrap:wrap;gap:clamp(32px,6vw,96px)}
+.head{flex:1 1 520px;min-width:0;display:flex;flex-direction:column;gap:24px}
+.text{flex:1 1 380px;min-width:0;display:flex;flex-direction:column;gap:20px;padding-top:8px}
+.p{margin:0;font-size:var(--fs-body);line-height:1.65;color:var(--muted);text-wrap:pretty}
+.p strong{color:var(--bone);font-weight:500}

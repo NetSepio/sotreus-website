@@ -1,0 +1,6 @@
+.ticker{overflow:hidden;border-bottom:1px solid var(--line-1);background:var(--ink-900)}
+.row{display:flex;width:max-content;font-family:var(--font-mono);font-size:13px;letter-spacing:.04em;color:var(--muted)}
+.track{display:flex;align-items:center;gap:48px;padding:18px 24px}
+.item{display:flex;gap:12px;align-items:center;white-space:nowrap}
+.time{color:var(--faint)}
+.kind{font-size:11px;letter-spacing:.12em}

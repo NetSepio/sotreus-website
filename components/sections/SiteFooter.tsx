@@ -1,7 +1,10 @@
+import Link from 'next/link';
 import { LogoMark, Wordmark } from '@/components/Logo';
+import { withBase } from './navLinks';
 import styles from './SiteFooter.module.css';
 
-export default function SiteFooter() {
+export default function SiteFooter({ home = true }: { home?: boolean }) {
+  const a = (href: string) => withBase(href, home);
   return (
     <footer className={styles.footer}>
       <div className={`container ${styles.inner}`}>
@@ -16,18 +19,21 @@ export default function SiteFooter() {
               predicted — and keeps those categories distinct.
             </p>
           </div>
-          {/* Add [PRIVACY POLICY] and [TERMS] links once those pages exist. */}
           <nav className={styles.nav} aria-label="Footer">
-            <a href="#how">How it works</a>
-            <a href="#context">Sky context</a>
-            <a href="#edge">Sotreus Edge</a>
-            <a href="#trust">Privacy</a>
+            <Link href={a('#how')}>How it works</Link>
+            <Link href={a('#context')}>Sky context</Link>
+            <Link href={a('#edge')}>Sotreus Edge</Link>
+            <Link href={a('#trust')}>Privacy</Link>
             <a href="https://x.com/netsepio">X · @netsepio</a>
           </nav>
         </div>
         <div className={styles.legal}>
           <span>Sotreus © 2026 NetSepio LLC. All rights reserved.</span>
-          <span className={styles.domain}>SOTREUS.COM</span>
+          <span className={styles.legalLinks}>
+            <Link href="/privacy/">Privacy policy</Link>
+            <Link href="/terms/">Terms</Link>
+            <span className={styles.domain}>SOTREUS.COM</span>
+          </span>
         </div>
       </div>
     </footer>

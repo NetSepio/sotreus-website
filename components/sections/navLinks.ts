@@ -5,3 +5,8 @@ export const NAV_LINKS = [
   { href: '#trust', label: 'Privacy' },
   { href: '#roadmap', label: 'Roadmap' },
 ] as const;
+
+export type NavLink = { readonly href: string; readonly label: string };
+
+/** Section anchors resolve against the home page when rendered on another route. */
+export const withBase = (href: string, home: boolean) => (home ? href : `/${href}`);

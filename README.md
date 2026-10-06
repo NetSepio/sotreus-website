@@ -64,7 +64,9 @@ Don't invent stats, dates, prices or user counts. Unknown facts stay as `[PLACEH
 
 ```
 app/          layout (metadata, OG, JSON-LD), page, tokens, globals, icons, robots, sitemap, fonts
-components/   Logo, ProvenanceGlyph, Eyebrow, RevealObserver
+  privacy/    /privacy/ — Privacy Policy
+  terms/      /terms/ — Terms
+components/   Logo, ProvenanceGlyph, Eyebrow, RevealObserver, LegalPage (shared legal layout)
   sections/   one component + CSS module per page section
 public/       CNAME, .nojekyll, og.png, logo/
 scripts/      generate-images.mjs (placeholder OG/icon rasters)
@@ -117,7 +119,7 @@ One-time setup:
 | Item | Owner |
 |---|---|
 | `[FORM ENDPOINT]` and provider choice | NetSepio |
-| `[PRIVACY POLICY]` and `[TERMS]` pages (then add them to the footer) | NetSepio |
+| Legal review of `/privacy/` and `/terms/`; name the aircraft-data and early-access list providers in the privacy policy once chosen | NetSepio |
 | `[PLAY STORE URL]`: replaces the hero CTA target when V1 ships | NetSepio |
 | `[CONFIRM WITH OWNER]`: should the hero badge switch to the tagline? | NetSepio |
 | Real Edge photography and app screenshots to replace the CSS mockups | NetSepio |

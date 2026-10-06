@@ -1,11 +1,17 @@
 'use client';
 
+import Link from 'next/link';
 import { useEffect, useRef, useState } from 'react';
+import type { NavLink } from './navLinks';
 import styles from './MobileNav.module.css';
 
-type Link = { readonly href: string; readonly label: string };
-
-export default function MobileNav({ links }: { links: readonly Link[] }) {
+export default function MobileNav({
+  links,
+  ctaHref,
+}: {
+  links: readonly NavLink[];
+  ctaHref: string;
+}) {
   const [open, setOpen] = useState(false);
   const buttonRef = useRef<HTMLButtonElement>(null);
 
@@ -40,9 +46,19 @@ export default function MobileNav({ links }: { links: readonly Link[] }) {
       >
         <svg width="16" height="16" viewBox="0 0 16 16" fill="none" aria-hidden="true">
           {open ? (
-            <path d="M3.5 3.5l9 9M12.5 3.5l-9 9" stroke="currentColor" strokeWidth="1.6" strokeLinecap="round" />
+            <path
+              d="M3.5 3.5l9 9M12.5 3.5l-9 9"
+              stroke="currentColor"
+              strokeWidth="1.6"
+              strokeLinecap="round"
+            />
           ) : (
-            <path d="M2 5h12M2 11h12" stroke="currentColor" strokeWidth="1.6" strokeLinecap="round" />
+            <path
+              d="M2 5h12M2 11h12"
+              stroke="currentColor"
+              strokeWidth="1.6"
+              strokeLinecap="round"
+            />
           )}
         </svg>
         Menu
@@ -51,15 +67,19 @@ export default function MobileNav({ links }: { links: readonly Link[] }) {
         <ul className={styles.list}>
           {links.map((l) => (
             <li key={l.href}>
-              <a href={l.href} onClick={() => setOpen(false)}>
+              <Link href={l.href} onClick={() => setOpen(false)}>
                 {l.label}
-              </a>
+              </Link>
             </li>
           ))}
           <li>
-            <a className={`btn-primary ${styles.cta}`} href="#access" onClick={() => setOpen(false)}>
+            <Link
+              className={`btn-primary ${styles.cta}`}
+              href={ctaHref}
+              onClick={() => setOpen(false)}
+            >
               Get early access
-            </a>
+            </Link>
           </li>
         </ul>
       </nav>

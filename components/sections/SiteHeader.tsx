@@ -1,28 +1,32 @@
+import Link from 'next/link';
 import { LogoMark, Wordmark } from '@/components/Logo';
 import MobileNav from './MobileNav';
-import { NAV_LINKS } from './navLinks';
+import { NAV_LINKS, withBase } from './navLinks';
 import styles from './SiteHeader.module.css';
 
-export default function SiteHeader() {
+/** `home` is false on secondary pages (privacy, terms) so anchors point back to the landing page. */
+export default function SiteHeader({ home = true }: { home?: boolean }) {
+  const links = NAV_LINKS.map((l) => ({ ...l, href: withBase(l.href, home) }));
+  const ctaHref = withBase('#access', home);
   return (
     <header className={styles.header}>
       <div className={`container ${styles.bar}`}>
-        <a href="#top" aria-label="Sotreus home" className={styles.brand}>
+        <Link href={home ? '#top' : '/'} aria-label="Sotreus home" className={styles.brand}>
           <LogoMark variant="compact" size={30} />
           <Wordmark />
-        </a>
+        </Link>
         <nav className={styles.nav} aria-label="Primary">
-          {NAV_LINKS.map((l) => (
-            <a key={l.href} href={l.href}>
+          {links.map((l) => (
+            <Link key={l.href} href={l.href}>
               {l.label}
-            </a>
+            </Link>
           ))}
         </nav>
         <div className={styles.actions}>
-          <a className={`btn-primary ${styles.cta}`} href="#access">
+          <Link className={`btn-primary ${styles.cta}`} href={ctaHref}>
             Get early access
-          </a>
-          <MobileNav links={NAV_LINKS} />
+          </Link>
+          <MobileNav links={links} ctaHref={ctaHref} />
         </div>
       </div>
     </header>

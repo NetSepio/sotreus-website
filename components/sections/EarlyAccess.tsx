@@ -13,8 +13,9 @@ export default function EarlyAccess() {
           <em>and have I seen any of it before?”</em>
         </h2>
         <p className="body" style={{ maxWidth: '34em' }}>
-          Sotreus answers with evidence, provenance, confidence, freshness — and restraint. Join
-          early access for the Android app and the first Sotreus Edge field units.
+          Sotreus answers with evidence, provenance, confidence, freshness — and restraint. The
+          Android app is <a href="#download">out now</a>. Join early access for the first Sotreus
+          Edge field units.
         </p>
         <EarlyAccessForm />
         <a href="https://x.com/netsepio" className={styles.social}>

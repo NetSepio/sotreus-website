@@ -33,7 +33,7 @@ export function legalMetadata(path: string, title: string, description: string):
   };
 }
 
-export const LEGAL_UPDATED = 'October 6, 2026';
+export const LEGAL_UPDATED = 'October 8, 2026';
 export const SUPPORT_EMAIL = 'support@netsepio.com';
 export const POSTAL_ADDRESS =
   'NetSepio LLC, Georgia, Tbilisi, Krtsanisi District, Nino and Ilia Nakashidzeebi Str., N1, (formerly Avlev), Bl. N3, Apt. N3.';

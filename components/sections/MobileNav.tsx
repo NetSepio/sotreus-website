@@ -78,7 +78,7 @@ export default function MobileNav({
               href={ctaHref}
               onClick={() => setOpen(false)}
             >
-              Get early access
+              Download
             </Link>
           </li>
         </ul>

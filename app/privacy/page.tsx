@@ -202,6 +202,15 @@ const sections: LegalSection[] = [
           no third-party scripts, and its fonts are served from sotreus.com itself.
         </p>
         <p>
+          The walkthrough video on the home page is hosted on YouTube. Nothing is requested from
+          YouTube until you press play. The player then loads from YouTube’s privacy-enhanced domain
+          (youtube-nocookie.com), and Google’s Privacy Policy applies to that playback.
+        </p>
+        <p>
+          The download links take you to GitHub Releases, or open the Solana dApp Store app on a
+          Solana Mobile phone. Each handles your download under its own policies.
+        </p>
+        <p>
           The site is hosted on GitHub Pages. Like any web host, GitHub processes technical
           information such as your IP address and browser details to deliver pages and protect its
           service, under the GitHub Privacy Statement. NetSepio does not use that information to
@@ -401,7 +410,8 @@ const sections: LegalSection[] = [
       <p>
         The Services can connect to or link to third parties, including aircraft-data providers,
         sources of public orbital elements, Meshtastic, Google Play and Android, GitHub (website
-        hosting) and X. Their own privacy policies govern how they handle information.
+        hosting and app downloads), the Solana dApp Store, YouTube (the walkthrough video, only
+        after you press play) and X. Their own privacy policies govern how they handle information.
       </p>
     ),
   },

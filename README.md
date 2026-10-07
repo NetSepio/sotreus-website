@@ -19,6 +19,7 @@ The page is one scroll, numbered the same way the design is:
 |---|---|---|---|
 | – | Hero | `#top` | “See the signals. Remember the encounters.” Listening-field illustration showing the three provenance types. |
 | – | Timeline ticker | – | An example journey: BLE fingerprints, an aircraft, a Remote ID broadcast and a satellite pass on one timeline. |
+| – | Download | `#download` | The walkthrough video (click to play), the APK from GitHub Releases for any Android phone, and the Solana dApp Store (official `solanadappstore://` deep link) for Solana Mobile phones. The hero and header CTAs point here. |
 | 01 | The visibility gap | – | Infrastructure can sense, log and correlate; the person moving through it has no comparable view. |
 | 02 | How it works | `#how` | Walk into any space and get five answers: what is here, familiar, changed, seen before, and around or above you. |
 | 03 | Encounter memory | – | Familiar / New / Persistent / Re-encountered, plus an explainable attention score (“not a threat score”). |
@@ -27,7 +28,7 @@ The page is one scroll, numbered the same way the design is:
 | 06 | Sotreus Edge · V2 | `#edge` | A pocket companion with two personalities, **Edge Mode** and **Mesh Mode** (interactive), hardware specs, and phone-only vs phone + Edge. |
 | 07 | Privacy + trust | `#trust` | No account, local database first, opt-in context, you set retention. Receive-only, always. |
 | 08 | Roadmap | `#roadmap` | V1 Phone → V1.1 Context → V2 Sotreus Edge → a personal context graph. |
-| – | Early access | `#access` | Email sign-up for the Android app and the first Sotreus Edge field units. |
+| – | Early access | `#access` | Email sign-up for the first Sotreus Edge field units. |
 
 ### Provenance language
 
@@ -57,9 +58,9 @@ Don't invent stats, dates, prices or user counts. Unknown facts stay as `[PLACEH
 
 - **Next.js 15** (App Router, TypeScript, React 19) with `output: 'export'`: the site is plain static HTML in `./out`.
 - **Global CSS tokens** (`app/tokens.css`) plus **CSS Modules** per section. No Tailwind, no CSS-in-JS.
-- **Server components by default.** The only client components are `EdgeModeSwitch`, `EarlyAccessForm`, `MobileNav`, and `RevealObserver` (a fallback for browsers without scroll-driven animations).
+- **Server components by default.** The only client components are `EdgeModeSwitch`, `EarlyAccessForm`, `MobileNav`, `VideoFacade`, and `RevealObserver` (a fallback for browsers without scroll-driven animations).
 - **Fonts** (Instrument Serif, Geist, Geist Mono) are committed in `app/fonts` (SIL OFL) and self-hosted with `next/font/local`.
-- **Privacy matches the product:** no analytics, no cookies, no third-party scripts, and no runtime requests to font CDNs.
+- **Privacy matches the product:** no analytics, no cookies, no third-party scripts, and no runtime requests to font CDNs. The walkthrough video is a click-to-load facade: the poster is self-hosted, and nothing is requested from YouTube (`youtube-nocookie.com`) until the visitor presses play.
 - **Accessible motion:** everything animated is CSS, and `prefers-reduced-motion` stops every loop. All content is visible with JavaScript off.
 
 ```
@@ -69,6 +70,7 @@ app/          layout (metadata, OG, JSON-LD), page, tokens, globals, icons, robo
 components/   Logo, ProvenanceGlyph, Eyebrow, RevealObserver, LegalPage (shared legal layout)
   sections/   one component + CSS module per page section
 public/       CNAME, .nojekyll, og.png, logo/
+assets/       statically imported images: video poster, official Solana dApp Store badge
 scripts/      generate-images.mjs (placeholder OG/icon rasters)
 docs/         handoff spec + reference render
 ```
@@ -120,7 +122,8 @@ One-time setup:
 |---|---|
 | `[FORM ENDPOINT]` and provider choice | NetSepio |
 | Legal review of `/privacy/` and `/terms/`; name the aircraft-data and early-access list providers in the privacy policy once chosen | NetSepio |
-| `[PLAY STORE URL]`: replaces the hero CTA target when V1 ships | NetSepio |
+| New release: bump `RELEASE` in `components/sections/GetTheApp.tsx` (version, APK URL, size) | NetSepio |
+| Google Play listing: add it to the Download section once V1 is on Play | NetSepio |
 | `[CONFIRM WITH OWNER]`: should the hero badge switch to the tagline? | NetSepio |
 | Real Edge photography and app screenshots to replace the CSS mockups | NetSepio |
 | `NODES [N]` in the Mesh Mode OLED readout | NetSepio |

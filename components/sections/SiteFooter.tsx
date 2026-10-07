@@ -20,6 +20,7 @@ export default function SiteFooter({ home = true }: { home?: boolean }) {
             </p>
           </div>
           <nav className={styles.nav} aria-label="Footer">
+            <Link href={a('#download')}>Download</Link>
             <Link href={a('#how')}>How it works</Link>
             <Link href={a('#context')}>Sky context</Link>
             <Link href={a('#edge')}>Sotreus Edge</Link>

@@ -24,9 +24,8 @@ export default function Hero() {
             have encountered before, and adds airspace and orbital context.
           </p>
           <div className={styles.ctas}>
-            {/* [PLAY STORE URL] replaces this target when V1 ships. */}
-            <a className={`btn-primary ${styles.ctaPrimary}`} href="#access">
-              Get early access
+            <a className={`btn-primary ${styles.ctaPrimary}`} href="#download">
+              Download for Android
               <svg width="16" height="16" viewBox="0 0 16 16" fill="none" aria-hidden="true">
                 <path
                   d="M3 8h10M9 4l4 4-4 4"

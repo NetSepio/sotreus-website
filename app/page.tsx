@@ -1,6 +1,7 @@
 import SiteHeader from '@/components/sections/SiteHeader';
 import Hero from '@/components/sections/Hero';
 import TimelineTicker from '@/components/sections/TimelineTicker';
+import GetTheApp from '@/components/sections/GetTheApp';
 import Thesis from '@/components/sections/Thesis';
 import HowItWorks from '@/components/sections/HowItWorks';
 import Memory from '@/components/sections/Memory';
@@ -19,6 +20,7 @@ export default function Home() {
       <main>
         <Hero />
         <TimelineTicker />
+        <GetTheApp />
         <Thesis />
         <HowItWorks />
         <Memory />

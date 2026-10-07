@@ -7,7 +7,7 @@ import styles from './SiteHeader.module.css';
 /** `home` is false on secondary pages (privacy, terms) so anchors point back to the landing page. */
 export default function SiteHeader({ home = true }: { home?: boolean }) {
   const links = NAV_LINKS.map((l) => ({ ...l, href: withBase(l.href, home) }));
-  const ctaHref = withBase('#access', home);
+  const ctaHref = withBase('#download', home);
   return (
     <header className={styles.header}>
       <div className={`container ${styles.bar}`}>
@@ -24,7 +24,7 @@ export default function SiteHeader({ home = true }: { home?: boolean }) {
         </nav>
         <div className={styles.actions}>
           <Link className={`btn-primary ${styles.cta}`} href={ctaHref}>
-            Get early access
+            Download
           </Link>
           <MobileNav links={links} ctaHref={ctaHref} />
         </div>

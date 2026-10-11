@@ -4,11 +4,23 @@
 .brandCol{display:flex;flex-direction:column;gap:14px;max-width:420px}
 .brand{display:flex;align-items:center;gap:12px}
 .about{margin:0;font-size:14px;line-height:1.6;color:var(--faint)}
+.navCol{display:flex;flex-direction:column;align-items:center;gap:4px}
 .nav{display:flex;flex-wrap:wrap;gap:0 32px;font-size:14px;align-items:flex-start}
 .nav a{display:inline-flex;align-items:center;min-height:44px;color:var(--muted);text-decoration:none;transition:color .2s}
 .nav a:hover{color:var(--bone)}
+.social{display:flex;flex-wrap:wrap;gap:4px 24px}
+.social a{display:inline-flex;align-items:center;gap:8px;min-height:44px;font-size:14px;color:var(--muted);text-decoration:none;transition:color .2s}
+.social a:hover{color:var(--bone)}
 .legal{display:flex;flex-wrap:wrap;align-items:center;justify-content:space-between;gap:12px;padding-top:12px;border-top:1px solid var(--line-0);font-size:13px;color:var(--faint)}
 .domain{font-family:var(--font-mono);letter-spacing:.1em}
 .legalLinks{display:flex;flex-wrap:wrap;align-items:center;gap:4px 24px}
-.legalLinks a{display:inline-flex;align-items:center;min-height:44px;color:var(--muted);text-decoration:none;transition:color .2s}
+.legalLinks a{display:inline-flex;align-items:center;gap:8px;min-height:44px;color:var(--muted);text-decoration:none;transition:color .2s}
 .legalLinks a:hover{color:var(--bone)}
+
+@media (max-width: 760px){
+  .top{flex-direction:column;align-items:center;text-align:center}
+  .brandCol{align-items:center}
+  .nav{justify-content:center}
+  .legal{flex-direction:column;justify-content:center;text-align:center}
+  .legalLinks{justify-content:center}
+}

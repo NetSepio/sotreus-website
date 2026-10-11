@@ -11,4 +11,8 @@
 .joined{display:flex;align-items:center;gap:12px;padding:16px 24px;border:1px solid var(--amber-tint-line);border-radius:var(--r-pill);background:var(--amber-tint-bg);color:var(--sensed);font-size:16px;text-align:left}
 .joinedDot{flex:none;width:8px;height:8px;border-radius:50%;background:var(--sensed)}
 
-@media (max-width: 420px){.submit{flex:1 1 100%}}
+@media (max-width: 760px){
+  .row{flex-direction:column;align-items:center}
+  .input{flex:none;width:100%;height:52px}
+  .submit{align-self:center}
+}

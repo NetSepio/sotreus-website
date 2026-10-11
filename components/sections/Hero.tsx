@@ -14,9 +14,9 @@ export default function Hero() {
             <span>Personal electronic situational awareness</span>
           </div>
           <h1 className={styles.h1}>
-            See the signals.
+            Protect the self.
             <br />
-            <em>Remember the encounters.</em>
+            <em>Perceive the world.</em>
           </h1>
           <p className={styles.lead}>
             Sotreus is a private instrument for the space around you. An Android app — with a pocket

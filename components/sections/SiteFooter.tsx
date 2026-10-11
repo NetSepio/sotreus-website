@@ -21,19 +21,17 @@ export default function SiteFooter({ home = true }: { home?: boolean }) {
           </div>
           <nav className={styles.nav} aria-label="Footer">
             <Link href={a('#download')}>Download</Link>
-            <Link href={a('#how')}>How it works</Link>
-            <Link href={a('#context')}>Sky context</Link>
-            <Link href={a('#edge')}>Sotreus Edge</Link>
-            <Link href={a('#trust')}>Privacy</Link>
+            <Link href={a('#discover')}>Discover</Link>
+            <Link href={a('#devices')}>Devices</Link>
+            <Link href={a('#access')}>Subscribe</Link>
             <a href="https://x.com/netsepio">X · @netsepio</a>
           </nav>
         </div>
         <div className={styles.legal}>
           <span>Sotreus © 2026 NetSepio LLC. All rights reserved.</span>
           <span className={styles.legalLinks}>
-            <Link href="/privacy/">Privacy policy</Link>
+            <Link href="/privacy/">Privacy</Link>
             <Link href="/terms/">Terms</Link>
-            <span className={styles.domain}>SOTREUS.COM</span>
           </span>
         </div>
       </div>

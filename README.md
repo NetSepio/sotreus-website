@@ -1,6 +1,6 @@
 # sotreus.com
 
-**Sotreus — See the signals. Remember the encounters.**
+**Sotreus — Protect the self. Perceive the world.**
 *Situational awareness, privately yours.*
 
 This repo is the single-page marketing site for Sotreus, live at **https://sotreus.com**.
@@ -17,17 +17,17 @@ The page is one scroll, numbered the same way the design is:
 
 | # | Section | Anchor | What it says |
 |---|---|---|---|
-| – | Hero | `#top` | “See the signals. Remember the encounters.” Listening-field illustration showing the three provenance types. |
+| – | Hero | `#top` | “Protect the self. Perceive the world.” Listening-field illustration showing the three provenance types. |
 | – | Timeline ticker | – | An example journey: BLE fingerprints, an aircraft, a Remote ID broadcast and a satellite pass on one timeline. |
-| – | Download | `#download` | The walkthrough video (click to play), the APK from GitHub Releases for any Android phone, and the Solana dApp Store (official `solanadappstore://` deep link) for Solana Mobile phones. The hero and header CTAs point here. |
+| – | Download | `#download` | The walkthrough video (click to play), the APK from the latest GitHub release for any Android phone, and the Solana dApp Store (official `solanadappstore://` deep link) for Solana Mobile phones. The hero and header CTAs point here. Version, APK URL and size come from that release. |
 | 01 | The visibility gap | – | Infrastructure can sense, log and correlate; the person moving through it has no comparable view. |
 | 02 | How it works | `#how` | Walk into any space and get five answers: what is here, familiar, changed, seen before, and around or above you. |
 | 03 | Encounter memory | – | Familiar / New / Persistent / Re-encountered, plus an explainable attention score (“not a threat score”). |
 | 04 | Context fusion | `#context` | Look around, then look up: drones (sensed), aircraft (network) and satellite passes (predicted), never blurred together. |
 | 05 | Calm by design | – | Awareness without alarmism: what other apps say compared with what Sotreus says. |
-| 06 | Sotreus Edge · V2 | `#edge` | A pocket companion with two personalities, **Edge Mode** and **Mesh Mode** (interactive), hardware specs, and phone-only vs phone + Edge. |
-| 07 | Privacy + trust | `#trust` | No account, local database first, opt-in context, you set retention. Receive-only, always. |
-| 08 | Roadmap | `#roadmap` | V1 Phone → V1.1 Context → V2 Sotreus Edge → a personal context graph. |
+| 06 | Devices | `#devices` | Physical security is Sotreus Edge (Edge Mode and Mesh Mode). Digital security is the proposed Sotreus Wallet. `#edge` still opens the same section on the physical device. |
+| 07 | Privacy + trust | `#trust` | No account, local database first, opt-in context, you set retention. Closes on “Protect the self. Perceive the world.” |
+| 08 | Roadmap | `#roadmap` | V1 Phone, including sky context → V2 Sotreus Edge → V3 Sotreus Wallet → V4 personal context graph, 360° physical and digital protection. |
 | – | Early access | `#access` | Email sign-up for the first Sotreus Edge field units. |
 
 ### Provenance language
@@ -58,7 +58,7 @@ Don't invent stats, dates, prices or user counts. Unknown facts stay as `[PLACEH
 
 - **Next.js 15** (App Router, TypeScript, React 19) with `output: 'export'`: the site is plain static HTML in `./out`.
 - **Global CSS tokens** (`app/tokens.css`) plus **CSS Modules** per section. No Tailwind, no CSS-in-JS.
-- **Server components by default.** The only client components are `EdgeModeSwitch`, `EarlyAccessForm`, `MobileNav`, `VideoFacade`, and `RevealObserver` (a fallback for browsers without scroll-driven animations).
+- **Server components by default.** The only client components are `DownloadRelease`, `DeviceSwitch`, `EdgeModeSwitch`, `EarlyAccessForm`, `MobileNav`, `VideoFacade`, and `RevealObserver` (a fallback for browsers without scroll-driven animations).
 - **Fonts** (Instrument Serif, Geist, Geist Mono) are committed in `app/fonts` (SIL OFL) and self-hosted with `next/font/local`.
 - **Privacy matches the product:** no analytics, no cookies, no third-party scripts, and no runtime requests to font CDNs. The walkthrough video is a click-to-load facade: the poster is self-hosted, and nothing is requested from YouTube (`youtube-nocookie.com`) until the visitor presses play.
 - **Accessible motion:** everything animated is CSS, and `prefers-reduced-motion` stops every loop. All content is visible with JavaScript off.
@@ -111,27 +111,6 @@ One-time setup:
    - Apex `AAAA`: `2606:50c0:8000::153`, `2606:50c0:8001::153`, `2606:50c0:8002::153`, `2606:50c0:8003::153`
    - `www` `CNAME`: `netsepio.github.io`
 4. Optional: verify the domain under the org's Settings → Pages to prevent takeover.
-
-## Placeholder assets
-
-`public/og.png`, `app/apple-icon.png` and `public/logo/icon-512.png` are generated placeholders (`npm run images`, which installs `sharp` temporarily). Replace them with the exports from the Sotreus design canvas (handoff §9).
-
-## Open items
-
-| Item | Owner |
-|---|---|
-| `[FORM ENDPOINT]` and provider choice | NetSepio |
-| Legal review of `/privacy/` and `/terms/`; name the aircraft-data and early-access list providers in the privacy policy once chosen | NetSepio |
-| New release: bump `RELEASE` in `components/sections/GetTheApp.tsx` (version, APK URL, size) | NetSepio |
-| Google Play listing: add it to the Download section once V1 is on Play | NetSepio |
-| `[CONFIRM WITH OWNER]`: should the hero badge switch to the tagline? | NetSepio |
-| Real Edge photography and app screenshots to replace the CSS mockups | NetSepio |
-| `NODES [N]` in the Mesh Mode OLED readout | NetSepio |
-
-## References
-
-- Build spec: [`docs/SOTREUS_NEXTJS_HANDOFF.md`](docs/SOTREUS_NEXTJS_HANDOFF.md)
-- Pixel and copy reference: [`docs/landing.reference.html`](docs/landing.reference.html)
 
 ---
 

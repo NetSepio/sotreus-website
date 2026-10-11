@@ -1,8 +1,7 @@
 export const NAV_LINKS = [
-  { href: '#how', label: 'How it works' },
-  { href: '#context', label: 'Sky context' },
-  { href: '#edge', label: 'Sotreus Edge' },
-  { href: '#trust', label: 'Privacy' },
+  { href: '#discover', label: 'Discover' },
+  { href: '#context', label: 'SkyAware' },
+  { href: '#devices', label: 'Devices' },
   { href: '#roadmap', label: 'Roadmap' },
 ] as const;
 

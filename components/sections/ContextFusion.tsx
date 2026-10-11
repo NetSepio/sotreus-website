@@ -56,12 +56,61 @@ const TIMELINE: { time: string; text: string; kind: Provenance; size: number; di
   { time: '22:07', text: 'Satellite pass overlapped this session', kind: 'predicted', size: 13 },
 ];
 
+const TRACKING = [
+  { kind: 'aircraft', label: 'Aircraft Tracking' },
+  { kind: 'satellite', label: 'Satellite Tracking' },
+  { kind: 'drone', label: 'Drone Tracking' },
+] as const;
+
+const iconProps = {
+  width: 28,
+  height: 28,
+  viewBox: '0 0 24 24',
+  fill: 'none',
+  stroke: 'currentColor',
+  strokeWidth: 1.6,
+  strokeLinecap: 'round' as const,
+  strokeLinejoin: 'round' as const,
+  'aria-hidden': true as const,
+};
+
+function TrackingIcon({ kind }: { kind: (typeof TRACKING)[number]['kind'] }) {
+  if (kind === 'satellite') {
+    return (
+      <svg {...iconProps}>
+        <rect x="9" y="8.2" width="6" height="7.6" rx="1" />
+        <rect x="2.5" y="10" width="5.2" height="4" rx="0.4" />
+        <rect x="16.3" y="10" width="5.2" height="4" rx="0.4" />
+        <path d="M12 8.2V5" />
+        <circle cx="12" cy="4.2" r="0.9" fill="currentColor" stroke="none" />
+      </svg>
+    );
+  }
+  if (kind === 'drone') {
+    return (
+      <svg {...iconProps}>
+        <circle cx="12" cy="12" r="1.6" />
+        <path d="M12 10.4 7.2 5.6M12 10.4l4.8-4.8M12 13.6 7.2 18.4M12 13.6l4.8 4.8" />
+        <circle cx="6.2" cy="4.6" r="2" />
+        <circle cx="17.8" cy="4.6" r="2" />
+        <circle cx="6.2" cy="19.4" r="2" />
+        <circle cx="17.8" cy="19.4" r="2" />
+      </svg>
+    );
+  }
+  return (
+    <svg {...iconProps} fill="currentColor" stroke="none">
+      <path d="M2.2 12.6h8.4L8.2 7.8h2.2l3.6 4.8h5.2c.8 0 1.4.6 1.4 1.3s-.6 1.3-1.4 1.3h-5.2L10.4 20H8.2l2.4-4.1H2.2v-3.3Z" />
+    </svg>
+  );
+}
+
 export default function ContextFusion() {
   return (
-    <section id="context" className={`section ${styles.section}`}>
+    <section className={`section ${styles.section}`}>
       <div aria-hidden="true" className={styles.orbitA} />
       <div aria-hidden="true" className={styles.orbitB} />
-      <div className={`container ${styles.inner}`}>
+      <div id="context" className={`container nav-target ${styles.inner}`}>
         <div className={`reveal ${styles.head}`}>
           <Eyebrow num="04">Context fusion</Eyebrow>
           <h2 className={`h2 ${styles.title}`}>
@@ -125,9 +174,12 @@ export default function ContextFusion() {
         </div>
 
         <ul className={`reveal ${styles.disclaimers}`}>
-          <li>An aircraft overhead is not proof of surveillance.</li>
-          <li>A satellite pass is not proof of imaging.</li>
-          <li>A drone broadcast is not proof of intent.</li>
+          {TRACKING.map((item) => (
+            <li key={item.label}>
+              <TrackingIcon kind={item.kind} />
+              {item.label}
+            </li>
+          ))}
         </ul>
       </div>
     </section>

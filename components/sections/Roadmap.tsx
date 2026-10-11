@@ -5,15 +5,9 @@ const STAGES = [
   {
     tag: 'V1 · PHONE',
     color: 'var(--sensed)',
-    title: 'Android sensing + memory',
-    text: 'BLE + visible Wi-Fi · Encounter memory · Places + journeys · Tagging + signatures · Evidence-based attention',
+    title: 'Sensing, memory + sky',
+    text: 'BLE + visible Wi-Fi · Encounter memory · Places + journeys · Aircraft, drones + satellite passes',
     variant: 'current',
-  },
-  {
-    tag: 'V1.1 · CONTEXT',
-    color: 'var(--network)',
-    title: 'Airspace, drones + orbit',
-    text: 'Aircraft / ADS-B data · Drone Remote ID · Satellite pass prediction · Public situational feeds',
   },
   {
     tag: 'V2 · SOTREUS EDGE',
@@ -22,18 +16,24 @@ const STAGES = [
     text: 'ESP32-S3 + BLE + 2.4 GHz Wi-Fi · Local storage + optional GNSS · Continuous observation · Mesh Mode via Meshtastic',
   },
   {
-    tag: 'FUTURE',
+    tag: 'V3 · SOTREUS WALLET',
+    color: 'var(--bone)',
+    title: 'Keys on the device',
+    text: 'ESP32-S3 + SE050E2 · Ethereum + Solana · Passkeys + one-time codes · Review, then a physical press · EAL6+ security',
+  },
+  {
+    tag: 'V4 · CONTEXT GRAPH',
     color: 'var(--predicted)',
     title: 'Personal context graph',
-    text: 'Local radios + sky + orbit + trusted nodes, across time and place',
+    text: 'Phone + Edge encounters · Wallet approvals · 360° physical and digital protection',
     variant: 'future',
   },
 ];
 
 export default function Roadmap() {
   return (
-    <section id="roadmap" className="section">
-      <div className={`container ${styles.inner}`}>
+    <section className="section">
+      <div id="roadmap" className={`container nav-target ${styles.inner}`}>
         <div className={`reveal ${styles.head}`}>
           <Eyebrow num="08">Roadmap</Eyebrow>
           <h2 className="h2">From the phone in your pocket to a personal context graph.</h2>

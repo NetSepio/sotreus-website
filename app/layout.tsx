@@ -28,7 +28,7 @@ const mono = localFont({
   display: 'swap',
 });
 
-const title = 'Sotreus — See the signals. Remember the encounters.';
+const title = 'Sotreus — Protect the self. Perceive the world.';
 const description =
   'Situational awareness, privately yours. A local-first Android app and Edge device that shows nearby radio activity, remembers encounters, and adds sky context.';
 
@@ -51,7 +51,7 @@ export const metadata: Metadata = {
         url: '/og.png',
         width: 1200,
         height: 630,
-        alt: 'Sotreus — See the signals. Remember the encounters.',
+        alt: 'Sotreus — Protect the self. Perceive the world.',
       },
     ],
   },

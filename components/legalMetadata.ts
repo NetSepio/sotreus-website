@@ -18,7 +18,7 @@ export function legalMetadata(path: string, title: string, description: string):
           url: '/og.png',
           width: 1200,
           height: 630,
-          alt: 'Sotreus — See the signals. Remember the encounters.',
+          alt: 'Sotreus — Protect the self. Perceive the world.',
         },
       ],
     },

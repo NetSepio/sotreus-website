@@ -1,4 +1,6 @@
-.section{position:relative;overflow:hidden;padding:clamp(96px,12vw,168px) 0}
+/* The rings are clipped to this box, so its top edge is the start of the circle.
+   Negative margin cancels the extra 80px scroll-padding above the 69px header. */
+.section{position:relative;overflow:hidden;padding:clamp(96px,12vw,168px) 0;scroll-margin-top:calc(69px - 80px)}
 .ring{position:absolute;left:50%;top:50%;transform:translate(-50%,-50%);border:1px solid var(--line-soft);border-radius:50%}
 .ping{width:900px;animation-duration:9s}
 .inner{position:relative;max-width:calc(900px + var(--gutter) * 2);margin:0 auto;padding:0 var(--gutter);display:flex;flex-direction:column;align-items:center;text-align:center;gap:28px}

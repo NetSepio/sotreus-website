@@ -52,8 +52,8 @@ const ogSvg = `
   <text x="150" y="120" font-family="Menlo, monospace" font-weight="500" font-size="24" letter-spacing="7" fill="${BONE}">SOTREUS</text>
 
   <text font-family="Georgia, 'Times New Roman', serif" font-size="78" fill="${BONE}" letter-spacing="-1.5">
-    <tspan x="80" y="330">See the signals.</tspan>
-    <tspan x="80" y="414" font-style="italic" fill="#A3A7AE">Remember the encounters.</tspan>
+    <tspan x="80" y="330">Protect the self.</tspan>
+    <tspan x="80" y="414" font-style="italic" fill="#A3A7AE">Perceive the world.</tspan>
   </text>
   <text x="80" y="540" font-family="Menlo, monospace" font-size="20" letter-spacing="4" fill="#7C828C">SITUATIONAL AWARENESS, PRIVATELY YOURS</text>
 </svg>`;

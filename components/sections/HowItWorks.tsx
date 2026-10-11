@@ -18,8 +18,8 @@ const QUESTIONS = [
 
 export default function HowItWorks() {
   return (
-    <section id="how" className="section">
-      <div className={`container ${styles.inner}`}>
+    <section className="section">
+      <div id="discover" className={`container nav-target ${styles.inner}`}>
         <div className={`reveal ${styles.copy}`}>
           <div className={styles.head}>
             <Eyebrow num="02">How it works</Eyebrow>

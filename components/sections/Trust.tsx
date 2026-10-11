@@ -51,9 +51,12 @@ export default function Trust() {
         </div>
         <div className={`reveal ${styles.receive}`}>
           <div className={styles.receiveCopy}>
-            <h3 className={styles.receiveTitle}>Receive-only. Always.</h3>
+            <h3 className={styles.receiveTitle}>
+              Protect the self. <em>Perceive the world.</em>
+            </h3>
             <p className={styles.itemText}>
-              Sotreus listens to what is broadcast. It never interferes with anyone else’s systems.
+              What is yours stays on your devices. What is around you is shown, and its source stays
+              clear.
             </p>
           </div>
           <div className={styles.chipsWrap}>

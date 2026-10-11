@@ -52,6 +52,8 @@ html.js-reveal .reveal:not(.is-visible){opacity:0;transform:translateY(28px)}
 /* --container is the content width; the reference render adds the gutters outside it */
 .container{max-width:calc(var(--container) + var(--gutter) * 2);margin-inline:auto;padding-inline:var(--gutter)}
 .section{padding:var(--section-y) 0;border-bottom:1px solid var(--line-1)}
+/* Nav links target the heading block. 16px plus the 80px scroll-padding clears the 68px header. */
+.nav-target{scroll-margin-top:16px}
 .section-alt{background:var(--ink-900)}
 
 .h2{margin:0;font-family:var(--font-display);font-weight:400;font-size:var(--fs-h2);line-height:var(--lh-h2);letter-spacing:-.01em;text-wrap:balance}

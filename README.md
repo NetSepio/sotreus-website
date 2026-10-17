@@ -21,13 +21,13 @@ The page is one scroll, numbered the same way the design is:
 | – | Timeline ticker | – | An example journey: BLE fingerprints, an aircraft, a Remote ID broadcast and a satellite pass on one timeline. |
 | – | Download | `#download` | The walkthrough video (click to play), the APK from the latest GitHub release for any Android phone, and the Solana dApp Store (official `solanadappstore://` deep link) for Solana Mobile phones. The hero and header CTAs point here. Version, APK URL and size come from that release. |
 | 01 | The visibility gap | – | Infrastructure can sense, log and correlate; the person moving through it has no comparable view. |
-| 02 | How it works | `#how` | Walk into any space and get five answers: what is here, familiar, changed, seen before, and around or above you. |
+| 02 | How it works | `#discover` | Walk into any space and get five answers: what is here, familiar, changed, seen before, and around or above you. |
 | 03 | Encounter memory | – | Familiar / New / Persistent / Re-encountered, plus an explainable attention score (“not a threat score”). |
 | 04 | Context fusion | `#context` | Look around, then look up: drones (sensed), aircraft (network) and satellite passes (predicted), never blurred together. |
 | 05 | Calm by design | – | Awareness without alarmism: what other apps say compared with what Sotreus says. |
-| 06 | Devices | `#devices` | Physical security is Sotreus Edge (Edge Mode and Mesh Mode). Digital security is the proposed Sotreus Wallet. `#edge` still opens the same section on the physical device. |
+| 06 | Edge | `#edge` | Sotreus Edge, the hardware companion for physical safety. Edge Mode observes; Mesh Mode runs Meshtastic. |
 | 07 | Privacy + trust | `#trust` | No account, local database first, opt-in context, you set retention. Closes on “Protect the self. Perceive the world.” |
-| 08 | Roadmap | `#roadmap` | V1 Phone, including sky context → V2 Sotreus Edge → V3 Sotreus Wallet → V4 personal context graph, 360° physical and digital protection. |
+| 08 | Roadmap | `#roadmap` | V1 Phone, including sky context → V2 Sotreus Edge → V3 personal context graph, 360° physical protection. |
 | – | Early access | `#access` | Email sign-up for the first Sotreus Edge field units. |
 
 ### Provenance language
@@ -58,7 +58,7 @@ Don't invent stats, dates, prices or user counts. Unknown facts stay as `[PLACEH
 
 - **Next.js 15** (App Router, TypeScript, React 19) with `output: 'export'`: the site is plain static HTML in `./out`.
 - **Global CSS tokens** (`app/tokens.css`) plus **CSS Modules** per section. No Tailwind, no CSS-in-JS.
-- **Server components by default.** The only client components are `DownloadRelease`, `DeviceSwitch`, `EdgeModeSwitch`, `EarlyAccessForm`, `MobileNav`, `VideoFacade`, and `RevealObserver` (a fallback for browsers without scroll-driven animations).
+- **Server components by default.** The only client components are `DownloadRelease`, `EdgeModeSwitch`, `EarlyAccessForm`, `MobileNav`, `VideoFacade`, and `RevealObserver` (a fallback for browsers without scroll-driven animations).
 - **Fonts** (Instrument Serif, Geist, Geist Mono) are committed in `app/fonts` (SIL OFL) and self-hosted with `next/font/local`.
 - **Privacy matches the product:** no analytics, no cookies, no third-party scripts, and no runtime requests to font CDNs. The walkthrough video is a click-to-load facade: the poster is self-hosted, and nothing is requested from YouTube (`youtube-nocookie.com`) until the visitor presses play.
 - **Accessible motion:** everything animated is CSS, and `prefers-reduced-motion` stops every loop. All content is visible with JavaScript off.
@@ -71,8 +71,7 @@ components/   Logo, ProvenanceGlyph, Eyebrow, RevealObserver, LegalPage (shared 
   sections/   one component + CSS module per page section
 public/       CNAME, .nojekyll, og.png, logo/
 assets/       statically imported images: video poster, official Solana dApp Store badge
-scripts/      generate-images.mjs (placeholder OG/icon rasters)
-docs/         handoff spec + reference render
+scripts/      generate-images.mjs (OG card and icon rasters)
 ```
 
 ## Develop

@@ -23,7 +23,7 @@ export default function SiteFooter({ home = true }: { home?: boolean }) {
             <nav className={styles.nav} aria-label="Footer">
               <Link href={a('#download')}>Download</Link>
               <Link href={a('#discover')}>Discover</Link>
-              <Link href={a('#devices')}>Devices</Link>
+              <Link href={a('#edge')}>Devices</Link>
               <Link href={a('#access')}>Subscribe</Link>
             </nav>
             <div className={styles.social}>

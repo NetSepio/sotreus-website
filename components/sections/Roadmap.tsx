@@ -16,16 +16,10 @@ const STAGES = [
     text: 'ESP32-S3 + BLE + 2.4 GHz Wi-Fi · Local storage + optional GNSS · Continuous observation · Mesh Mode via Meshtastic',
   },
   {
-    tag: 'V3 · SOTREUS WALLET',
-    color: 'var(--bone)',
-    title: 'Keys on the device',
-    text: 'ESP32-S3 + SE050E2 · Ethereum + Solana · Passkeys + one-time codes · Review, then a physical press · EAL6+ security',
-  },
-  {
-    tag: 'V4 · CONTEXT GRAPH',
+    tag: 'V3 · CONTEXT GRAPH',
     color: 'var(--predicted)',
     title: 'Personal context graph',
-    text: 'Phone + Edge encounters · Wallet approvals · 360° physical and digital protection',
+    text: 'Phone + Edge encounters · Across time and place · 360° physical protection',
     variant: 'future',
   },
 ];

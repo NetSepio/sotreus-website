@@ -1,7 +1,7 @@
 export const NAV_LINKS = [
   { href: '#discover', label: 'Discover' },
   { href: '#context', label: 'SkyAware' },
-  { href: '#devices', label: 'Devices' },
+  { href: '#edge', label: 'Edge' },
   { href: '#roadmap', label: 'Roadmap' },
 ] as const;
 

@@ -7,11 +7,9 @@ export default function Hero() {
       <div aria-hidden="true" className={styles.grid} />
       <div className={`container ${styles.inner}`}>
         <div className={styles.copy}>
-          {/* [CONFIRM WITH OWNER] whether this badge switches to the tagline
-              “Situational awareness, privately yours”. */}
           <div className={styles.badge}>
             <span className={styles.badgeDot} />
-            <span>Personal electronic situational awareness</span>
+            <span>Situational awareness, privately yours</span>
           </div>
           <h1 className={styles.h1}>
             Protect the self.
@@ -36,7 +34,7 @@ export default function Hero() {
                 />
               </svg>
             </a>
-            <a className={`btn-ghost ${styles.ctaGhost}`} href="#how">
+            <a className={`btn-ghost ${styles.ctaGhost}`} href="#discover">
               How Sotreus works
             </a>
           </div>

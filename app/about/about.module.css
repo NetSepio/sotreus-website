@@ -1,0 +1,69 @@
+.main{border-bottom:1px solid var(--line-1)}
+.inner{padding-top:clamp(56px,8vw,104px);padding-bottom:clamp(72px,9vw,120px);display:flex;flex-direction:column;gap:clamp(40px,5vw,64px)}
+
+/* ---------- intro ---------- */
+.head{display:flex;flex-direction:column;gap:20px;max-width:880px}
+.eyebrow{font-family:var(--font-mono);font-size:var(--fs-eyebrow);letter-spacing:var(--ls-eyebrow);text-transform:uppercase;color:var(--faint)}
+.title{margin:0;font-family:var(--font-display);font-weight:400;font-size:var(--fs-h2);line-height:var(--lh-h2);letter-spacing:-.01em}
+.title em{color:var(--muted)}
+.lead{margin:0;font-size:var(--fs-lead);line-height:1.6;color:var(--fog);text-wrap:pretty}
+.lead strong{color:var(--bone);font-weight:500}
+.ctas{display:flex;flex-wrap:wrap;gap:12px;padding-top:8px}
+.ctas a{min-height:48px;padding:0 22px;font-size:15px}
+
+/* ---------- toc + body ---------- */
+.layout{display:flex;flex-wrap:wrap;align-items:flex-start;gap:clamp(32px,6vw,80px)}
+.toc{flex:0 1 240px;min-width:0;position:sticky;top:96px;max-height:calc(100vh - 120px);overflow:auto}
+.tocTitle{font-family:var(--font-mono);font-size:12px;letter-spacing:.14em;text-transform:uppercase;color:var(--faint);margin-bottom:12px}
+.toc ol{list-style:none;margin:0;padding:0;border-left:1px solid var(--line-2)}
+.toc a{display:flex;gap:10px;padding:7px 0 7px 16px;font-size:14px;line-height:1.4;color:var(--muted);text-decoration:none}
+.toc a:hover{color:var(--bone)}
+.tocNum{font-family:var(--font-mono);font-size:12px;color:var(--faint);padding-top:1px}
+
+.body{flex:1 1 600px;min-width:0;max-width:800px;display:flex;flex-direction:column}
+.section{padding:clamp(40px,5vw,56px) 0;border-top:1px solid var(--line-1);scroll-margin-top:88px}
+.section:first-child{padding-top:0;border-top:0}
+.h2{margin:0 0 20px;display:flex;align-items:baseline;gap:14px;font-family:var(--font-display);font-weight:400;font-size:clamp(30px,3.2vw,42px);line-height:1.1;text-wrap:balance}
+.num{font-family:var(--font-mono);font-size:13px;color:var(--sensed);flex:none}
+.section p,.section li{font-size:16px;line-height:1.7;color:var(--muted);text-wrap:pretty}
+.section p{margin:0 0 14px}
+.section p:last-child{margin-bottom:0}
+.section strong{color:var(--bone);font-weight:500}
+.section a{color:var(--bone);text-underline-offset:3px}
+.section a:hover{color:var(--accent)}
+
+/* H3 items: one per feature, differentiator, step or question */
+.items{display:flex;flex-direction:column}
+.item{padding:20px 0;border-top:1px solid var(--line-0)}
+.item:first-child{border-top:0;padding-top:4px}
+.h3{margin:0 0 8px;font-size:18px;font-weight:500;line-height:1.35;color:var(--bone)}
+
+.bullets{margin:0 0 20px;padding-left:20px;display:flex;flex-direction:column;gap:8px}
+.bullets li::marker{color:var(--sensed)}
+
+.quote{margin:4px 0 0;padding:4px 0 4px 20px;border-left:2px solid var(--sensed);font-family:var(--font-display);font-size:clamp(22px,2.2vw,28px);line-height:1.3;color:var(--bone)}
+.quote footer{margin-top:10px;font-family:var(--font-mono);font-size:12px;letter-spacing:.12em;text-transform:uppercase;color:var(--faint)}
+
+.links{display:flex;flex-wrap:wrap;gap:4px 20px;margin-top:4px}
+.links a{display:inline-flex;align-items:center;min-height:44px;font-size:14px;color:var(--fog);text-decoration:none}
+.links a:hover{color:var(--accent)}
+
+/* beta testers + partners call-out */
+.callout{margin-top:24px;padding:clamp(24px,4vw,32px);border:1px solid var(--amber-tint-line);border-radius:var(--r-card-lg);background:var(--amber-tint-bg)}
+.callout .h3{font-family:var(--font-display);font-weight:400;font-size:clamp(24px,2.4vw,30px);line-height:1.15}
+.callout .ctas{padding-top:12px}
+
+/* ---------- key facts ---------- */
+.facts{margin:0;border:1px solid var(--line-2);border-radius:var(--r-card);overflow:hidden}
+.fact{display:grid;grid-template-columns:minmax(150px,34%) 1fr;gap:4px 24px;padding:14px 20px;border-top:1px solid var(--line-0)}
+.fact:first-child{border-top:0}
+.fact:nth-child(odd){background:var(--ink-900)}
+.fact dt{font-family:var(--font-mono);font-size:12px;letter-spacing:.1em;text-transform:uppercase;color:var(--faint);padding-top:3px}
+.fact dd{margin:0;font-size:15px;line-height:1.6;color:var(--bone);overflow-wrap:anywhere}
+
+@media (max-width: 900px){
+  .toc{position:static;max-height:none;flex-basis:100%}
+}
+@media (max-width: 560px){
+  .fact{grid-template-columns:1fr}
+}

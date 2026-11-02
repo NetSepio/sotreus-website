@@ -24,6 +24,7 @@ export default function SiteFooter({ home = true }: { home?: boolean }) {
               <Link href={a('#download')}>Download</Link>
               <Link href={a('#discover')}>Discover</Link>
               <Link href={a('#edge')}>Devices</Link>
+              <Link href="/about/">About</Link>
               <Link href={a('#access')}>Subscribe</Link>
             </nav>
             <div className={styles.social}>

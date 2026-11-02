@@ -74,9 +74,17 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
     '@graph': [
       {
         '@type': 'Organization',
+        '@id': 'https://sotreus.com/#organization',
         name: 'NetSepio LLC',
-        url: 'https://sotreus.com',
-        sameAs: ['https://x.com/netsepio'],
+        url: 'https://netsepio.com',
+        foundingDate: '2024',
+        address: { '@type': 'PostalAddress', addressLocality: 'Tbilisi', addressCountry: 'GE' },
+        email: 'support@netsepio.com',
+        sameAs: [
+          'https://x.com/netsepio',
+          'https://www.linkedin.com/company/netsepio',
+          'https://github.com/NetSepio',
+        ],
       },
       { '@type': 'WebSite', name: 'Sotreus', url: 'https://sotreus.com' },
     ],

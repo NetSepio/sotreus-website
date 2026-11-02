@@ -30,6 +30,8 @@ The page is one scroll, numbered the same way the design is:
 | 08 | Roadmap | `#roadmap` | V1 Phone, including sky context → V2 Sotreus Edge → V3 personal context graph, 360° physical protection. |
 | – | Early access | `#access` | Email sign-up for the first Sotreus Edge field units. |
 
+`/about/` is a separate, text-first page written for search engines and AI answers: a one-line value proposition, then H2 sections (what Sotreus does, what makes it different, who uses it, the team and origin story, how it works, key facts as a `<dl>`, FAQ) with H3 items. Its FAQ also feeds `FAQPage` JSON-LD, so keep the visible text and the structured data the same.
+
 ### Provenance language
 
 Every context example on the site carries one of three labels. The shape carries the meaning and the colour reinforces it, so these shapes and colours are not used for anything else:

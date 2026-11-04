@@ -1,0 +1,390 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Sotreus Pitch</title>
+    <meta name="description" content="Sotreus in twelve slides: the visibility gap, the Android app that is live today, and how the Sotreus Edge hardware is shaping up." />
+    <meta name="theme-color" content="#0B0E13" />
+    <link rel="canonical" href="https://sotreus.com/resources/pitch/" />
+    <link rel="icon" href="/icon.svg" type="image/svg+xml" />
+
+    <meta property="og:type" content="website" />
+    <meta property="og:site_name" content="Sotreus" />
+    <meta property="og:url" content="https://sotreus.com/resources/pitch/" />
+    <meta property="og:title" content="Sotreus — Protect the self. Perceive the world." />
+    <meta property="og:description" content="The pitch: a private instrument for the space around you, the Android app live today, and the Sotreus Edge build so far." />
+    <meta property="og:image" content="https://sotreus.com/og.png" />
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta name="twitter:site" content="@netsepio" />
+
+    <link rel="preload" href="./fonts/instrument-serif-latin-400-normal.woff2" as="font" type="font/woff2" crossorigin />
+    <link rel="preload" href="./fonts/Geist-Variable.woff2" as="font" type="font/woff2" crossorigin />
+    <link rel="stylesheet" href="./deck.css" />
+    <script>
+      document.documentElement.classList.add("js");
+    </script>
+  </head>
+
+  <body>
+    <svg width="0" height="0" class="sr" aria-hidden="true">
+      <defs>
+        <symbol id="mark" viewBox="0 0 64 64">
+          <g transform="rotate(-24 32 32)"><path d="M3 32A29 10 0 0 1 61 32" fill="none" stroke="#E9E6DF" stroke-width="2.2" stroke-dasharray="3 3.4" stroke-linecap="round" /></g>
+          <circle cx="32" cy="32" r="19" fill="#0B0E13" stroke="#E9E6DF" stroke-width="3.6" />
+          <g transform="rotate(-24 32 32)"><path d="M3 32A29 10 0 0 0 61 32" fill="none" stroke="#E9E6DF" stroke-width="2.2" stroke-dasharray="3 3.4" stroke-linecap="round" /><circle cx="58.3" cy="36.2" r="2.6" fill="#E9E6DF" /></g>
+          <circle cx="32" cy="32" r="6.8" fill="#F2B33D" />
+        </symbol>
+      </defs>
+    </svg>
+
+    <div class="deck">
+      <main class="stage" id="stage">
+        <!-- 01 · Title -->
+        <section class="slide title grid-bg" data-title="Protect the self. Perceive the world." data-min="0.5">
+          <div class="body">
+            <div class="split">
+              <div class="stack">
+                <div class="brand" data-a><svg aria-hidden="true"><use href="#mark" /></svg><span>SOTREUS</span></div>
+                <p class="badge" data-a><span class="g-sensed"></span>Situational awareness, privately yours</p>
+                <h1 data-a>Protect the self.<br /><em>Perceive the world.</em></h1>
+                <p class="lede" data-a>A private instrument for the space around you. An Android app, with a pocket Edge companion, that shows what nearby electronics are broadcasting, remembers what you have encountered before, and adds airspace and orbital context.</p>
+                <p class="trustline" data-a><span>Local-first</span><i>/</i><span>Evidence-first</span><i>/</i><span>Receive-only</span></p>
+              </div>
+              <div class="field" data-a="pop" aria-hidden="true">
+                <svg viewBox="0 0 400 400">
+                  <circle cx="200" cy="200" r="190" class="ring" />
+                  <circle cx="200" cy="200" r="140" class="ring" />
+                  <circle cx="200" cy="200" r="90" class="ring" />
+                  <circle cx="200" cy="200" r="40" class="ring" />
+                  <path d="M10 200H390M200 10V390" class="cross" />
+                  <g class="sweep"><path d="M200 200L200 10A190 190 0 0 1 334 66Z" /></g>
+                  <circle cx="200" cy="200" r="9" fill="#F2B33D" />
+                  <circle cx="200" cy="200" r="22" class="pulse" />
+                  <g class="blips">
+                    <circle cx="262" cy="148" r="6" class="p-sensed" />
+                    <circle cx="128" cy="236" r="6" class="p-sensed" />
+                    <circle cx="232" cy="292" r="6" class="p-sensed" />
+                    <circle cx="300" cy="250" r="6" class="p-sensed" />
+                    <circle cx="96" cy="120" r="8" class="p-network" />
+                    <circle cx="318" cy="92" r="9" class="p-predicted" />
+                  </g>
+                </svg>
+                <ul class="legend">
+                  <li><span class="g-sensed"></span>Sensed</li>
+                  <li><span class="g-network"></span>Network</li>
+                  <li><span class="g-predicted"></span>Predicted</li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </section>
+
+        <!-- 02 · Problem -->
+        <section class="slide" data-title="The visibility gap" data-min="1">
+          <p class="kicker"><b>01</b>The visibility gap</p>
+          <h2>The world is increasingly instrumented. <em>The individual still lacks a dashboard for it.</em></h2>
+          <div class="body">
+            <div class="split">
+              <div class="stack">
+                <p class="lede" data-a>Surveillance no longer has a single shape. The space around you is electronically dense, and hard to read.</p>
+                <div class="chips" data-a>
+                  <span class="chip">Cameras</span><span class="chip">Doorbells</span><span class="chip">Trackers</span><span class="chip">Access control</span><span class="chip">Beacons</span><span class="chip">Drones</span><span class="chip">Vehicle electronics</span><span class="chip">Building sensors</span><span class="chip">Aircraft</span>
+                </div>
+              </div>
+              <div class="asym" data-a>
+                <div class="card">
+                  <span class="k">Infrastructure</span>
+                  <h3>Senses. Logs. Correlates.</h3>
+                  <div class="bars"><i style="--w: 92%"></i><i style="--w: 84%"></i><i style="--w: 78%"></i></div>
+                </div>
+                <div class="card dim">
+                  <span class="k">The person moving through it</span>
+                  <h3>Usually has no comparable view.</h3>
+                  <div class="bars"><i style="--w: 6%"></i><i style="--w: 4%"></i><i style="--w: 3%"></i></div>
+                </div>
+              </div>
+            </div>
+            <p class="take" data-a>The problem is asymmetry. Sotreus closes part of that gap: <em>honestly, and only with what your devices can legitimately observe.</em></p>
+          </div>
+        </section>
+
+        <!-- 03 · How it works -->
+        <section class="slide" data-title="Walk into any space. Get five answers." data-min="1.5">
+          <p class="kicker"><b>02</b>How it works</p>
+          <h2>Walk into any space. <em>Get five answers.</em></h2>
+          <div class="body">
+            <div class="split r-wide">
+              <div class="stack">
+                <p class="lede" data-a>Your Android phone is the first sensor. Sotreus observes nearby Bluetooth LE and visible Wi-Fi, learns what is normal for a place, and keeps the evidence on your device.</p>
+                <div class="card" data-a>
+                  <span class="k">Not a scanner</span>
+                  <p>A scanner answers one question: what is nearby right now. Sotreus answers the next four, because it remembers.</p>
+                </div>
+              </div>
+              <ol class="qs">
+                <li data-a><span>01</span><div><h3>What is here?</h3><p>How many radios and device families are visible right now.</p></div></li>
+                <li data-a><span>02</span><div><h3>What is familiar?</h3><p>What matches this place, or devices you have tagged as yours or expected.</p></div></li>
+                <li data-a><span>03</span><div><h3>What changed?</h3><p>What is new, unusually persistent, or different from your previous visits.</p></div></li>
+                <li data-a><span>04</span><div><h3>What have I seen before?</h3><p>Which tagged or fingerprinted entities have appeared somewhere else.</p></div></li>
+                <li data-a><span>05</span><div><h3>What is around or above me?</h3><p>Nearby aircraft, drone Remote ID broadcasts and satellite passes, when you turn context on.</p></div></li>
+              </ol>
+            </div>
+          </div>
+        </section>
+
+        <!-- 04 · Demo -->
+        <section class="slide video-slide" data-title="Demo: the Android app, live today" data-min="1.5">
+          <p class="kicker"><b>Demo</b>The Android app, live today</p>
+          <div class="body">
+            <div class="demo">
+              <figure class="vid" data-a>
+                <video id="demo" src="./media/sotreus-demo.mp4" poster="./media/sotreus-demo-poster.jpg" preload="metadata" playsinline controls></video>
+                <button class="vid-play" type="button" aria-label="Play the Sotreus demo">
+                  <svg viewBox="0 0 22 22" aria-hidden="true"><path d="M6 3.8v14.4c0 .8.9 1.3 1.6.9l11.5-7.2c.6-.4.6-1.3 0-1.7L7.6 2.9C6.9 2.5 6 3 6 3.8Z" /></svg>
+                  <span>Play demo · 0:57</span>
+                </button>
+              </figure>
+              <div class="stack">
+                <h2 class="demo-h" data-a>Sotreus, <em>on a real phone.</em></h2>
+                <ul class="ticks" data-a>
+                  <li><b>Place</b> A live session: radios observed here, against this place's baseline</li>
+                  <li><b>Encounters</b> New, familiar, persistent, re-encountered</li>
+                  <li><b>Context</b> Aircraft, Remote ID and satellite passes, each with its source</li>
+                  <li><b>History</b> Sessions and places, kept on the device</li>
+                  <li><b>Settings</b> Retention, location precision, opt-in feeds</li>
+                </ul>
+                <div class="chips" data-a><span class="chip on">APK · GitHub Releases</span><span class="chip on">Solana dApp Store</span></div>
+                <p class="note" data-a>Click the video, or press <kbd>P</kbd>, to play and pause.</p>
+              </div>
+            </div>
+          </div>
+        </section>
+
+        <!-- 05 · Memory + language -->
+        <section class="slide" data-title="A scanner shows a list. Sotreus remembers." data-min="1">
+          <p class="kicker"><b>03</b>Encounter memory</p>
+          <h2>A scanner shows you a list. <em>Sotreus remembers.</em></h2>
+          <div class="body">
+            <div class="g g4">
+              <div class="card state" data-a><span class="sd s1"></span><h3>Familiar</h3><p>Matches this place's baseline, or a device you marked as yours or expected.</p></div>
+              <div class="card state" data-a><span class="sd s2"></span><h3>New</h3><p>Not seen in this place before. Most new things are ordinary; Sotreus simply notes them.</p></div>
+              <div class="card state" data-a><span class="sd s3"></span><h3>Persistent</h3><p>Present for an unusually long stretch of a session, rather than passing through.</p></div>
+              <div class="card state hi" data-a><span class="sd s4"></span><h3>Re-encountered</h3><p>A distinctive fingerprint seen again in a different, unrelated place.</p></div>
+            </div>
+            <div class="split l-wide">
+              <table class="say" data-a>
+                <thead><tr><th>Other apps say</th><th>Sotreus says</th></tr></thead>
+                <tbody>
+                  <tr><td><del>Threat detected</del></td><td>Needs attention</td></tr>
+                  <tr><td><del>Spy camera detected</del></td><td>Camera-family signature observed</td></tr>
+                  <tr><td><del>You are being tracked</del></td><td>Repeated cross-location re-encounter observed</td></tr>
+                </tbody>
+              </table>
+              <p class="take" data-a>An explainable attention score, <em>not a threat score.</em> You decide what the evidence means.</p>
+            </div>
+          </div>
+        </section>
+
+        <!-- 06 · Context fusion -->
+        <section class="slide" data-title="Look around. Then look up." data-min="1">
+          <p class="kicker"><b>04</b>Context fusion</p>
+          <h2>Look around. <em>Then look up.</em></h2>
+          <div class="body">
+            <div class="g g3">
+              <div class="card prov" data-a>
+                <p class="pv sensed"><span class="g-sensed"></span>SENSED<small>Drone Remote ID</small></p>
+                <p>Observed directly by your phone or Sotreus Edge: BLE, Wi-Fi and compatible Remote ID broadcasts.</p>
+                <dl><dt>Drone altitude</dt><dd>74 m</dd><dt>Horizontal distance</dt><dd>312 m</dd><dt>Last message</dt><dd>1.2 s ago</dd></dl>
+              </div>
+              <div class="card prov" data-a>
+                <p class="pv network"><span class="g-network"></span>NETWORK<small>Aircraft / ADS-B</small></p>
+                <p>Reported by an external provider over the internet. Always shown with its source and data age.</p>
+                <dl><dt>Aircraft nearby</dt><dd>8</dd><dt>Closest</dt><dd>6.2 km</dd><dt>Data freshness</dt><dd>4 s</dd></dl>
+              </div>
+              <div class="card prov" data-a>
+                <p class="pv predicted"><span class="g-predicted"></span>PREDICTED<small>Satellite passes</small></p>
+                <p>Computed on your device from public orbital elements. Your location never leaves the phone.</p>
+                <dl><dt>Pass begins → ends</dt><dd>22:07 → 22:14</dd><dt>Max elevation</dt><dd>61°</dd><dt>Orbit data age</dt><dd>3 h 18 m</dd></dl>
+              </div>
+            </div>
+            <div class="split l-wide">
+              <ol class="tl" data-a>
+                <li><span class="g-sensed"></span><time>21:39</time>New BLE fingerprint observed</li>
+                <li><span class="g-sensed"></span><time>21:41</time>Tagged device re-encountered</li>
+                <li><span class="g-network"></span><time>21:42</time>Aircraft passed within the selected radius</li>
+                <li><span class="g-predicted"></span><time>22:07</time>Satellite pass overlapped this session</li>
+              </ol>
+              <p class="take" data-a>One timeline, three kinds of source. Sotreus may say events <em>overlapped in time.</em> It never says one caused the other.</p>
+            </div>
+            <p class="note" data-a>Example values, as shown on sotreus.com.</p>
+          </div>
+        </section>
+
+        <!-- 07 · Privacy -->
+        <section class="slide" data-title="Privacy is architecture, not a setting" data-min="1">
+          <p class="kicker"><b>05</b>Privacy + trust</p>
+          <h2>Privacy is architecture, <em>not a setting.</em></h2>
+          <div class="body">
+            <div class="g g3">
+              <div class="card" data-a><h3>No account required</h3><p>Scanning, memory, tagging and reports work without signing up for anything.</p></div>
+              <div class="card" data-a><h3>Local database first</h3><p>No mandatory cloud. Radio history and places stay on your device, with optional encryption at rest.</p></div>
+              <div class="card" data-a><h3>Context is opt-in</h3><p>Aircraft and orbital feeds are modules you switch on. Local sensing works fully offline.</p></div>
+              <div class="card" data-a><h3>Your location, your call</h3><p>Sky queries run in Exact area, Coarse area or Off. Satellite passes are computed without sending your location.</p></div>
+              <div class="card" data-a><h3>Share safely</h3><p>Exports default to coarse coordinates, time buckets and hashed identifiers.</p></div>
+              <div class="card" data-a><h3>You set retention</h3><p>Keep everything, keep N days, keep tagged only, or delete a place or session outright.</p></div>
+            </div>
+            <div class="never" data-a>
+              <span class="k">Receive-only. Sotreus never:</span>
+              <span class="x">Deauthenticate</span><span class="x">Inject</span><span class="x">Jam</span><span class="x">Exploit</span><span class="x">Interrogate</span>
+            </div>
+          </div>
+        </section>
+
+        <!-- 08 · Why hardware -->
+        <section class="slide" data-title="Why hardware: Sotreus Edge" data-min="1">
+          <p class="kicker"><b>06</b>Sotreus Edge</p>
+          <h2>A pocket companion that keeps observing <em>when your phone can't.</em></h2>
+          <div class="body">
+            <div class="split l-wide">
+              <table class="cmp" data-a>
+                <thead><tr><th>Phone only</th><th>Phone + Edge</th></tr></thead>
+                <tbody>
+                  <tr><td>Observation depends on Android scan cadence and power policy.</td><td>Edge keeps its own schedule while the phone sleeps.</td></tr>
+                  <tr><td>A journey can lose coverage when the app is constrained.</td><td>Edge keeps logging and syncs the full session later.</td></tr>
+                  <tr><td>Phone location is the only location source.</td><td>External GNSS anchors Edge observations independently.</td></tr>
+                  <tr><td>Battery cost is paid by the phone.</td><td>A dedicated battery isolates the sensing workload.</td></tr>
+                  <tr><td>No LoRa hardware.</td><td>The same node switches to Meshtastic for off-grid comms.</td></tr>
+                </tbody>
+              </table>
+              <div class="stack">
+                <div class="modes" data-a>
+                  <div class="card hl"><span class="k">Edge Mode</span><h3>Observes</h3><p>Scans, timestamps and stores on its own battery. LoRa stays silent.</p></div>
+                  <div class="card"><span class="k">Mesh Mode</span><h3>Talks</h3><p>Runs Meshtastic over LoRa for off-grid messages.</p></div>
+                </div>
+                <dl class="specs" data-a>
+                  <dt>Compute</dt><dd>ESP32-S3</dd><dt>Radios</dt><dd>BLE 5 · 2.4 GHz Wi-Fi · SX1262 LoRa</dd><dt>Location</dt><dd>Optional GNSS</dd><dt>Storage</dt><dd>8 MB flash, append-only log</dd><dt>Display</dt><dd>0.96″ OLED</dd>
+                </dl>
+                <p class="note" data-a>The app stays the brain. Edge is not an ADS-B or satellite receiver. Prototype baseline: Heltec WiFi LoRa 32 V3.</p>
+              </div>
+            </div>
+          </div>
+        </section>
+
+        <!-- 09 · Build so far (from the MyriadFlow deck, slide 27) -->
+        <section class="slide" data-title="Sotreus Edge: the build so far" data-min="1.5">
+          <p class="kicker"><b>07</b>Hardware · bench update</p>
+          <h2>Sotreus Edge: <em>the build so far.</em></h2>
+          <div class="body">
+            <div class="split l-wide">
+              <div class="photos" data-a>
+                <figure class="ph big"><img src="./img/sotreus-connecting.jpg" alt="Sotreus Edge on a desk, its OLED reading Connecting…" /><figcaption>Booting: "Connecting…"</figcaption></figure>
+                <figure class="ph"><img src="./img/sotreus-inside.jpg" alt="The open enclosure: Heltec board, SMA antenna and battery leads in the black back shell" /><figcaption>Inside: board, antenna, battery leads</figcaption></figure>
+                <figure class="ph"><img src="./img/sotreus-lora-error.jpg" alt="The OLED showing a Wi-Fi scan of 7 networks at -74 dBm, and LoRa Error" /><figcaption>The most honest screen in the room</figcaption></figure>
+              </div>
+              <div class="stack">
+                <ul class="status" data-a>
+                  <li>Enclosure 3D printed</li>
+                  <li>IoT modules in</li>
+                  <li class="wip">Firmware bring-up</li>
+                </ul>
+                <div class="card" data-a><span class="k">On the bench</span><p>Wi-Fi scan works: 7 networks, best at -74 dBm. LoRa reports "Error", which is exactly what bring-up is for.</p></div>
+                <div class="card" data-a><span class="k">Inside, from the photos</span><p>Heltec ESP32 + LoRa board with OLED · SMA antenna on an IPEX pigtail · LiPo on a JST lead · white front, black back · USB-C</p></div>
+                <p class="note" data-a>Photos: @netsepio on X, 25 Oct 2026.</p>
+              </div>
+            </div>
+          </div>
+        </section>
+
+        <!-- 10 · 3D teardown (from the MyriadFlow deck, slide 28) -->
+        <section class="slide lab" data-model="sotreus" data-title="Sotreus Edge, taken apart in 3D" data-min="1.5">
+          <div class="lab-grid">
+            <header class="lab-head">
+              <div><p class="kicker"><b>08</b>Hardware · teardown · interactive</p><h2>Sotreus Edge, <em>taken apart.</em></h2></div>
+              <span class="lab-tag">Modelled from the build photos · drag to orbit</span>
+            </header>
+            <aside class="lab-l">
+              <div class="pnl"><span class="pk">Parts</span><b class="big" data-hud="parts">15</b><span class="ps">two printed shells, one board, one radio path</span></div>
+              <div class="pnl"><span class="pk">Selected</span><b class="nm" data-hud="partName">Sotreus Edge · prototype</b><p data-hud="partInfo">Two-part printed enclosure · ESP32 + LoRa board with OLED · external antenna · battery</p></div>
+              <div class="pnl"><span class="pk">Build status</span><ul class="checks"><li>Enclosure printed</li><li>IoT modules in</li><li class="wip">Firmware bring-up</li></ul></div>
+            </aside>
+            <div class="td-canvas" role="img" aria-label="Interactive 3D model of the Sotreus Edge prototype"></div>
+            <aside class="lab-r">
+              <div class="pnl"><span class="pk">Wi-Fi scan</span><b class="big">7</b><span class="ps">networks · RSSI <em data-hud="rssi">-74</em> dBm</span>
+                <svg class="spark" viewBox="0 0 200 40" preserveAspectRatio="none" data-spark="rssi" aria-hidden="true"><polyline points="" /></svg>
+                <span class="ps">replayed from the bench photo</span></div>
+              <div class="pnl"><span class="pk">Mode</span><div class="seg2"><button type="button" data-mode="edge">Edge Mode</button><button type="button" data-mode="mesh">Mesh Mode</button></div><p data-hud="modeNote">Edge Mode: observe and log on-device · LoRa silent</p></div>
+              <div class="pnl"><span class="pk">Bring-up log</span><ol class="loglist" data-log></ol></div>
+            </aside>
+            <nav class="lab-bar" aria-label="Teardown controls">
+              <button type="button" data-act="assemble">Assembled</button><button type="button" data-act="explode">Explode</button><span class="sep"></span>
+              <button type="button" data-focus="shell">Shell</button><button type="button" data-focus="board">Board</button><button type="button" data-focus="radio">Radio</button><button type="button" data-focus="power">Power</button><button type="button" data-focus="ui">Front panel</button><span class="sep"></span>
+              <button type="button" data-act="xray">X-ray</button><button type="button" data-act="tour">Tour</button>
+              <span class="drag">Watch the OLED: switch to Mesh Mode</span>
+            </nav>
+          </div>
+        </section>
+
+        <!-- 11 · Roadmap + where it stands -->
+        <section class="slide" data-title="Where it stands, and what's next" data-min="1">
+          <p class="kicker"><b>09</b>Roadmap</p>
+          <h2>From the phone in your pocket <em>to a personal context graph.</em></h2>
+          <div class="body">
+            <ol class="road">
+              <li class="now" data-a><p class="rt">V1 · Phone<span class="chip on">Live</span></p><h3>Sensing, memory + sky</h3><p>BLE + visible Wi-Fi · encounter memory · places + journeys · aircraft, drones + satellite passes</p></li>
+              <li class="wip" data-a><p class="rt">V2 · Sotreus Edge<span class="chip wip">On the bench</span></p><h3>Always-on companion</h3><p>ESP32-S3 + BLE + 2.4 GHz Wi-Fi · local storage + optional GNSS · continuous observation · Mesh Mode via Meshtastic</p></li>
+              <li class="later" data-a><p class="rt">V3 · Context graph<span class="chip">Next</span></p><h3>Personal context graph</h3><p>Phone + Edge encounters · across time and place · 360° physical protection</p></li>
+            </ol>
+            <div class="stages" data-a>
+              <span class="k">Sotreus Edge, stage by stage</span>
+              <ol>
+                <li class="d"><b>Imagine</b><small>done</small></li>
+                <li class="d"><b>Specify</b><small>done</small></li>
+                <li class="d"><b>Source</b><small>done</small></li>
+                <li class="d"><b>Design</b><small>done</small></li>
+                <li class="d"><b>Make</b><small>done</small></li>
+                <li class="p"><b>Test</b><small>in progress</small></li>
+                <li><b>Scale</b><small>field units next</small></li>
+              </ol>
+            </div>
+          </div>
+        </section>
+
+        <!-- 12 · Close -->
+        <section class="slide title close grid-bg" data-title="Thank you" data-min="0.5">
+          <div class="body">
+            <div class="stack center">
+              <div class="brand" data-a><svg aria-hidden="true"><use href="#mark" /></svg><span>SOTREUS</span></div>
+              <h1 data-a>Protect the self.<br /><em>Perceive the world.</em></h1>
+              <p class="lede" data-a>What is yours stays on your devices. What is around you is shown, and its source stays clear.</p>
+              <div class="ctas" data-a>
+                <a class="cta primary" href="https://sotreus.com/#download">Install the Android app<small>sotreus.com</small></a>
+                <a class="cta" href="https://sotreus.com/#access">Join Edge early access<small>first field units</small></a>
+                <a class="cta" href="https://x.com/netsepio">Follow the build<small>@netsepio</small></a>
+              </div>
+              <p class="trustline" data-a><span>NetSepio LLC</span><i>/</i><span>sotreus.com</span></p>
+            </div>
+          </div>
+        </section>
+      </main>
+    </div>
+
+    <div class="progress" aria-hidden="true"><i id="bar"></i></div>
+    <p class="hint" id="hint">← → to move · M for slides · F for fullscreen</p>
+    <nav class="hud" id="hud" aria-label="Deck controls">
+      <button class="pres-only" id="prev" aria-label="Previous slide"><svg viewBox="0 0 24 24"><path d="M15 18l-6-6 6-6" /></svg></button>
+      <span class="count pres-only" id="count" aria-live="polite">1 / 1</span>
+      <button class="pres-only" id="next" aria-label="Next slide"><svg viewBox="0 0 24 24"><path d="M9 18l6-6-6-6" /></svg></button>
+      <button id="menu" aria-label="All slides"><svg viewBox="0 0 24 24"><path d="M4 6h16M4 12h16M4 18h16" /></svg></button>
+      <button class="pres-only" id="fs" aria-label="Fullscreen"><svg viewBox="0 0 24 24"><path d="M8 3H5a2 2 0 0 0-2 2v3M16 3h3a2 2 0 0 1 2 2v3M8 21H5a2 2 0 0 1-2-2v-3M16 21h3a2 2 0 0 0 2-2v-3" /></svg></button>
+    </nav>
+    <div class="toc" id="toc" hidden>
+      <button class="close" id="tocClose">Close · Esc</button>
+      <h2>All slides <span id="tocTime"></span></h2>
+      <ol id="tocList"></ol>
+    </div>
+
+    <script type="module" src="./deck.js"></script>
+    <script type="module" src="./teardown.js"></script>
+  </body>
+</html>
